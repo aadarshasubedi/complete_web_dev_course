@@ -1,0 +1,288 @@
+<!doctype html>
+<html>
+<head>
+    <title>Will's BBC Clone</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <style type="text/css">
+
+    body {
+    	margin:0px;
+    }
+
+    #topbar {
+    	background-color:#7b0000;
+    	border-color:#7b0000;
+    	width:100%;
+    	height:39px;
+    	border-right:1px solid #871919;
+    	/*border-bottom:1px solid #b40c0c;*/
+    	color:white;
+    }
+
+    .fixedwidth {
+    	width:976px;
+    	margin:0 auto;
+    	/*background-color:black;*/
+    }
+
+    #logodiv {
+    	position:relative;
+    	height:31px;
+    	padding-top:8px;
+    	padding-left:17px;
+    	padding-right:8px;
+    	float:left;
+    	border-right:1px solid #871919;
+    }
+
+/*
+How to make a link cover a whole div...
+
+Learned this from: https://stackoverflow.com/questions/796087/make-a-div-into-a-link
+*/
+
+    .full_link {
+		position:absolute; 
+		width:100%;
+		height:100%;
+		top:0;
+		left: 0;
+		z-index: 1;
+		background-image: bbc.html('empty.gif');
+	}
+
+    #blank_signindiv {
+    	width:163px;
+    	min-height:1px;
+    	height:39px;
+    	float:left;
+		border-right:1px solid #871919;
+    }
+
+    #news {
+    	position:relative;
+    	float:left;
+    	font-family: arial,helvetica,sans-serif;
+    	line-height: 16px;
+    	font-size: 13px;
+    	font-weight:bold;
+    	text-align: center;
+    	width:65px;
+    	height:28px;
+    	padding-top:11px;
+    	border-right:1px solid #871919;
+    }
+
+    a:hover + #newsrollover {
+    	display: block;
+    }
+
+    #newsrollover {
+    	position:relative;
+    	display:none;
+    	min-height:1px;
+    	height:2px;
+    	width:65px;
+    	top:8px;
+    	padding-top:1px;
+    	background-color:#b40c0c;
+    	border-bottom:1px solid #b40c0c;
+    }
+
+    a:hover + #sportrollover {
+    	display: block;
+    }
+
+    #sportrollover {
+    	position:relative;
+    	display:none;
+    	min-height:1px;
+    	height:2px;
+    	width:65px;
+    	top:8px;
+    	padding-top:1px;
+    	background-color:#fbfd11;
+    	border-bottom:1px solid #fbfd11;
+    }
+
+    #sport {
+    position:relative;
+	float:left;
+	font-family: arial,helvetica,sans-serif;
+	line-height: 16px;
+	font-size: 13px;
+	font-weight:bold;
+	text-align: center;
+	width:65px;
+	height:28px;
+	padding-top:11px;
+	border-right:1px solid #871919;
+    }
+
+    #weather {
+    position:relative;
+	float:left;
+	font-family: arial,helvetica,sans-serif;
+	line-height: 16px;
+	font-size: 13px;
+	font-weight:bold;
+	text-align: center;
+	width:82px;
+	height:28px;
+	padding-top:11px;
+	border-right:1px solid #871919;
+    }
+
+    a:hover + #weather_rollover {
+    	display:block;
+    }
+
+    #weather_rollover {
+	position:relative;
+	display:none;
+	min-height:1px;
+	height:2px;
+	width:82px;
+	top:8px;
+	padding-top:1px;
+	background-color:#21c4e7;
+	border-bottom:1px solid #21c4e7;
+    }
+
+    #iplayer {
+    position:relative;
+	float:left;
+	font-family: arial,helvetica,sans-serif;
+	line-height: 16px;
+	font-size: 13px;
+	font-weight:bold;
+	text-align: center;
+	width:73.6563px;
+	height:28px;
+	padding-top:11px;
+	border-right:1px solid #871919;
+    }
+
+    a:hover + #iplayer_rollover {
+    	display:block;
+    }
+
+    #iplayer_rollover {
+	position:relative;
+	display:none;
+	min-height:1px;
+	height:2px;
+	width:73.6563px;
+	top:8px;
+	padding-top:1px;
+	background-color:#dd0f62;
+	border-bottom:1px solid #dd0f62;
+    }
+
+    #tv {
+    position:relative;
+	float:left;
+	font-family: arial,helvetica,sans-serif;
+	line-height: 16px;
+	font-size: 13px;
+	font-weight:bold;
+	text-align: center;
+	width:47.625px;
+	height:28px;
+	padding-top:11px;
+	border-right:1px solid #871919;
+	background:rgba(0,0,0,0.001)
+    }
+
+    a:hover + #tv_rollover {
+    	display:block;
+    }
+
+    #tv_rollover {
+	position:relative;
+	display:none;
+	min-height:1px;
+	height:2px;
+	width:47.625px;
+	top:8px;
+	padding-top:1px;
+	background-color:#d1d5d6;
+	border-bottom:1px solid #d1d5d6;
+    }
+
+    </style> 
+</head>
+
+<body>
+
+	<div id="container">
+
+		<div id="topbar">
+
+			<div class="fixedwidth">
+		
+			</div>
+
+			<div id="logodiv">
+			<a href="bbc.html"><img src="images/bbclogo.jpg" /></a>
+			</div>
+
+			<div id="blank_signindiv">
+			</div>
+
+			<div id="news">
+			News
+			<a href="bbc.html">
+				<span class="full_link"></span>
+			</a>
+				<div id="newsrollover">
+
+				</div>
+			</div>
+
+			<div id="sport">
+			Sport
+			<a href="bbc.html">
+				<span class="full_link"></span>
+			</a>
+				<div id="sportrollover">
+				</div>
+			</div>
+
+			<div id="weather">
+			Weather
+			<a href="bbc.html">
+				<span class="full_link"></span>
+			</a>
+				<div id="weather_rollover">
+				</div>
+			</div>
+
+			<div id="iplayer">
+			iPlayer
+			<a href="bbc.html">
+				<span class="full_link"></span>
+			</a>
+				<div id="iplayer_rollover">
+				</div>
+			</div>
+
+			<div id="tv">
+			TV
+			<a href="bbc.html">
+				<span class="full_link"></span>
+			</a>
+				<div id="tv_rollover">
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+</body>
+</html>
