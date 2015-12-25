@@ -29,6 +29,9 @@
 	}
 
 	#more_stuff {
+		width:100%;
+		display: block;
+		float:left;
 	}
 
 	</style>
@@ -43,25 +46,21 @@
 
 		<p>This is some stuff.</p>
 
-		<div class="square"></div>
-
-		<div class="square"></div>
-
 		<div id="circle"></div>
 
-	</div>
+		<div id="more_stuff">
 
-	<div id="more_stuff">
+			<p>This is some more stuff.</p>
 
-	<p>This is some more stuff.</p>
+		</div>
 
 	</div>
 
 	<script>
 
-		$("div").click(function() {
+		$("#circle").click(function() {
 
-			alert("Div clicked!");
+			alert("Circle clicked!");
 
 		}); 
 
