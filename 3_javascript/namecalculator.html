@@ -1,0 +1,173 @@
+<!doctype html>
+<head>
+	<title>Custom Signage</title>
+	<meta charset="utf-8" />
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<style type="text/css">
+
+	body {
+		font-family: 'Montserrat', sans-serif;
+		background-color: #96f2ef;
+	}
+
+	.container {
+		position:relative;
+		height:66vh;
+		width:95vw;
+		margin:0 auto;
+		padding:20px;
+		overflow:auto;
+	}
+
+	.box {
+		position:absolute;
+		top:50%;
+		left:50%;
+		width:700px;
+		height:400px;
+		margin: -250px 0 0 -350px;
+		border: 5px solid black;
+		border-radius: 10px;
+		background-color: #d3ffff;
+		text-align: center;
+	}
+
+	#innerbox {
+		position:absolute;
+		padding:15px;
+		top:30%;
+		left:45%;
+		width:275px;
+		height:100px;
+		border: 5px solid black;
+		text-align:left;
+		border-radius: 10px;
+		margin:0 0 0 -110px;
+	}
+
+	.bigbold {
+		font-weight: bold;
+		font-size: 20px;
+	}
+
+	input {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 12px;
+		border-radius: 5px;
+		border: solid 1px black;
+		background-color: #e5fcfc;
+		outline:none;
+	}
+
+	input:hover {
+		-webkit-transition: all 300ms ease 100ms;
+		background-color: #FFFFFF;
+	}
+
+
+	#submitbutton {
+		margin-left: 20px;
+	}
+
+	::-webkit-input-placeholder {
+   color: red;
+	}
+
+	:-moz-placeholder { /* Firefox 18- */
+	   color: red;  
+	}
+
+	::-moz-placeholder {  /* Firefox 19+ */
+	   color: red;  
+	}
+
+	:-ms-input-placeholder {  
+	   color: red;  
+	}
+
+	#box2 {
+		display:none;
+		height:100px;
+		width:150px;
+		position: relative;
+		top:160px;
+		border: 5px solid black;
+		border-radius: 5px;
+		text-align:center;
+		background-color:red;
+		margin:0 auto;
+	}
+
+	#box2 p {
+		font-size: 50px;
+		font-weight: bold;
+		position:relative;
+		top:-30px;
+	}
+
+	</style>
+
+</head>
+
+<body>
+
+	<div class="container">
+
+		<div class="box">
+
+		<h1><strong>Custom Signage<strong></h1>
+
+		<p>£5 per letter! Enter your name below to find our the cost!</p>
+
+			<div id="innerbox">
+
+				<p><span class="bigbold">Enter name:</span></p>
+
+				<input type="text" id="plaquename" maxlength="20" size="20"></input>
+
+				<span id="submitbutton"><input type="submit" name="showcost" id="showcost"/></span>
+
+			</div>
+
+			<div id="box2">
+
+				<p id="costgoeshere"></p>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<script type="text/javascript">
+
+		document.getElementById("showcost").onclick=function() {
+
+		var input = document.getElementById("plaquename").value;
+
+		var plaquename = document.getElementById("plaquename");
+
+		if (input.length == 0) {
+
+			plaquename.setAttribute("placeholder", "Please enter a name!");
+
+		} else {
+
+			var quantity = input.length;
+
+			var price = quantity * 5;
+
+			document.getElementById("costgoeshere").innerHTML="£"+price;
+
+			document.getElementById("box2").style.display="block";
+
+			};
+
+		};
+
+	</script>
+
+</body>
+</html>

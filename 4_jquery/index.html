@@ -11,13 +11,10 @@
 
 	<style type="text/css">
 
-	#circle {
-		height:200px;
-		width:200px;
-		border-radius: 100px;
-		background-color: green;
-		margin:0 10px 0 10px;
+	.square {
+
 	}
+
 
 	</style>
 
@@ -25,18 +22,32 @@
 
 <body>
 
-		<div id="circle"></div>
+		<div>
+		
+			<p id="para1">This is my paragraph text</p>
 
-		<p id="firstpara">This is some stuff.</p>
+		</div>
 
-		<iframe src="http://www.cnn.com"></iframe>
+		<button id="but1">Fade out</button>
+
+		<button id="but2">Fade in</button>
 
 	<script>
 
-		$("#circle").hover(function() {
+		$("#but1").click(function() {
 
-			$("iframe").attr("src", "http://www.ecowebhosting.co.uk");
-		}); 
+			$("#para1").fadeOut("fast", function() {
+
+				alert("FadeOut complete");
+
+			});
+
+		});
+
+		$("#but2").click(function() {
+
+			$("#para1").fadeIn("fast");	
+		});
 
 	</script>
 
