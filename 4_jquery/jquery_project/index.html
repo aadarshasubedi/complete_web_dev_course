@@ -1,0 +1,262 @@
+<!doctype html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="Bill Batey">
+	<meta name="description" content="This is the code player project from the jQuery section of Rob Percibal's Complete Web Developer course on udemy.com">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<title>jQuery Code Player Project</title>
+
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+	<style type="text/css">
+
+	/*----------------------------------------------RESET CSS RULES ----------------------------------------------*/	
+
+	/* http://meyerweb.com/eric/tools/css/reset/ 
+	   v2.0 | 20110126
+	   License: none (public domain)
+	*/
+
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure, 
+	footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+	body {
+		line-height: 1;
+	}
+	ol, ul {
+		list-style: none;
+	}
+	blockquote, q {
+		quotes: none;
+	}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+	}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+
+	/*----------------------------------------------RESET CSS RULES ----------------------------------------------*/
+/*
+	* {
+		border: solid 1px black;
+	}
+*/
+	body {
+        font-family: 'Montserrat', sans-serif;
+	}
+
+	#container {
+
+	}
+
+	#header {
+		border:solid 1px black;
+		text-align: center;
+		margin:0 auto;
+		height:75px;
+		background-color:#d8d6d6;
+
+	}
+
+	#codeplayer {
+		float:left;
+		position: relative;
+		top:25px;
+		left:25px;
+		font-weight: bold;
+		font-size: 1.5em;
+	}
+
+	#optionsDiv {
+		position: relative;
+		top:25px;
+		padding: 0;
+		margin: 0 auto;
+		width:200px;
+	}
+
+
+	#options {
+		margin: 0 auto;
+		list-style: none;
+		padding:0;
+	}
+
+	#options li {
+		float:left;
+		padding:5px;
+		display:inline;
+		border: solid 1px gray;
+	}
+
+	.button.clicked {
+		background-color:#848383;
+	}
+
+	#runSpan {
+		float:right;
+		position: relative;
+		padding:5px;
+		top:20px;
+		right:25px;		
+	}
+
+	#runButton {
+		font-weight: bold;
+		font-size: 1.5em;
+	}
+
+	.clear {
+		clear: both;
+	}
+
+	#contentContainer {
+		position: relative;
+		display: flex;
+	}
+
+	#contentContainer > div {
+		width:100%;
+	}
+
+	#contentContainer textarea {
+		font-family: monospace;
+		font-size: 1.5em;
+		border:none;
+		width:100%;
+		height:100%;
+		background-color: white;
+		outline:none;
+	}
+
+	.bodyDivs {
+		padding:4px;
+		border:solid 1px black;
+		float:left;
+	}
+
+	.codeLabel {
+		display: inline;
+		float:right;
+		padding:20px;
+
+	}
+
+	</style>
+
+</head>
+
+
+
+<body>
+
+	<div id="container">
+
+		<div id="header">
+
+			<span id="codeplayer">CodePlayer</span>
+
+			<span id="runSpan"><button id="runButton">Run</button></span>
+
+			<div id="optionsDiv">	
+
+				<ul id="options">
+					<li id="htmlSelector" class="button">HTML</li>
+					<li id="cssSelector" class="button">CSS</li>
+					<li id="jsSelector" class="button">JS</li>
+					<li id="resultSelector" class="button">Result</li>
+				</ul>
+
+			</div>
+
+		</div> 
+
+		<div class="clear"></div>
+
+		<div id="contentContainer">
+
+			<div id="htmlDiv" class="bodyDivs">
+			
+				<div class="codeLabel">HTML</div>
+
+				<textarea>Test</textarea>
+			
+			</div>
+
+			<div id="cssDiv" class="bodyDivs">
+			
+				Test
+
+			</div>
+
+			<div id="jsDiv" class="bodyDivs">
+				
+				Test
+			
+			</div>
+
+			<div id="resultDiv" class="bodyDivs">
+				
+				Test
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<script>
+
+	var windowHeight = $(window).height();
+
+	var menuBarHeight = $('#header').height();
+
+	var bodyHeight=windowHeight-menuBarHeight-45;
+
+	$(".bodyDivs").height(bodyHeight+"px");
+
+	$('li.button').click(function() {
+
+		$('li:focus').toggle();
+		$(this).toggleClass('clicked');
+		return false;
+
+	});
+
+	</script>
+
+</body>
+</html>

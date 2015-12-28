@@ -1,0 +1,43 @@
+<!doctype html>
+<head>
+	<title>Learning jQuery themes</title>
+	<meta charset="utf-8" />
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+	<style type="text/css">
+
+	* {
+		border: solid 1px;
+	}
+
+	#wrapper {
+		background-color: yellow;
+	}
+
+	</style>
+
+</head>
+
+<body>
+
+	<ul>
+		<li>Chicken</li>
+		<li>Beef</li>
+		<li>Steak</li>
+		<li>Meat slop</li>
+	</ul>
+
+	<script>
+
+	$("ul").sortable();
+
+	</script>
+
+</body>
+</html>
