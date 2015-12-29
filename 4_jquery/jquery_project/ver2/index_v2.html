@@ -11,7 +11,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
 	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
@@ -139,19 +139,39 @@
 		font-size: 1.5em;
 	}
 
+	.clear {
+		clear: both;
+	}
+
 	#contentContainer {
-		display: flex;
+		position: relative;
+		float:left;
 	}
 
 	#contentContainer > div {
 		width:100%;
 	}
 
+	#contentContainer textarea {
+		font-family: monospace;
+		font-size: 1.5em;
+		border:none;
+		width:100%;
+		height:100%;
+		background-color: white;
+		outline:none;
+	}
+
 	.bodyDivs {
+		padding:4px;
 		border:solid 1px black;
-		padding:20px;
 		float:left;
-		height:100vw;
+	}
+
+	.codeLabel {
+		display: absolute;
+		padding:20px;
+
 	}
 
 	</style>
@@ -183,11 +203,24 @@
 
 		</div> 
 
+		<div class="clear"></div>
+
+<!-- TO DO:
+
+	Monday 28/12/2015 - 21:51
+
+	- Restructure content container as Rob has on his video at 17 mins 20 seconds
+	- Don't use display:flex on html/css/js/results divs. Copy Rob's way.
+	
+ -->
+
 		<div id="contentContainer">
 
 			<div id="htmlDiv" class="bodyDivs">
 			
-				Test
+				<div class="codeLabel">HTML</div>
+
+				<textarea>Test</textarea>
 			
 			</div>
 
@@ -215,11 +248,27 @@
 
 	<script>
 
+	var windowHeight = $(window).height();
+
+	console.log("window height = "+windowHeight);
+
+	var menuBarHeight = $('#header').height();
+
+	console.log("menu height = "+menuBarHeight);
+
+	var bodyHeight=windowHeight-menuBarHeight-100;
+
+	console.log("body height = "+bodyHeight);
+
+	$(".contentContainer").height(bodyHeight+"px");
+
 	$('li.button').click(function() {
 
 		$('li:focus').toggle();
 		$(this).toggleClass('clicked');
 		return false;
+
+	});
 
 	</script>
 
