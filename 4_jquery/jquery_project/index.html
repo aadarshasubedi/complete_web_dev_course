@@ -11,7 +11,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
 	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
@@ -139,12 +139,7 @@
 		font-size: 1.5em;
 	}
 
-	.clear {
-		clear: both;
-	}
-
 	#contentContainer {
-		position: relative;
 		display: flex;
 	}
 
@@ -152,27 +147,11 @@
 		width:100%;
 	}
 
-	#contentContainer textarea {
-		font-family: monospace;
-		font-size: 1.5em;
-		border:none;
-		width:100%;
-		height:100%;
-		background-color: white;
-		outline:none;
-	}
-
 	.bodyDivs {
-		padding:4px;
 		border:solid 1px black;
-		float:left;
-	}
-
-	.codeLabel {
-		display: inline;
-		float:right;
 		padding:20px;
-
+		float:left;
+		height:100vw;
 	}
 
 	</style>
@@ -204,15 +183,11 @@
 
 		</div> 
 
-		<div class="clear"></div>
-
 		<div id="contentContainer">
 
 			<div id="htmlDiv" class="bodyDivs">
 			
-				<div class="codeLabel">HTML</div>
-
-				<textarea>Test</textarea>
+				Test
 			
 			</div>
 
@@ -240,21 +215,11 @@
 
 	<script>
 
-	var windowHeight = $(window).height();
-
-	var menuBarHeight = $('#header').height();
-
-	var bodyHeight=windowHeight-menuBarHeight-45;
-
-	$(".bodyDivs").height(bodyHeight+"px");
-
 	$('li.button').click(function() {
 
 		$('li:focus').toggle();
 		$(this).toggleClass('clicked');
 		return false;
-
-	});
 
 	</script>
 
