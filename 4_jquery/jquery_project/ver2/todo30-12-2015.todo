@@ -1,0 +1,14 @@
+Jquery Project (v2) To Do:
+
+Wednesday 30/12/2015 - 08:31:
+  ✔ Followed Rob's way of making individual content divs @done (15-12-30 08:33)
+  ✔ Push changes to github repo @done (15-12-30 08:33)
+  ☐ Continue on from 27:10 on udemy video to follow Rob on how to toggle switches to hide content divs / text areas.
+
+Tuesday 29/12/2015:
+  ✔ Restructured project, added in ver1 (my independent version) and ver2 (copying Rob as per the video) @done (15-12-30 08:33)
+  ✔ Pushed changed to github @done (15-12-30 08:33)
+
+  Monday 28/12/2015 - 21:51:
+  ✔ Restructure content container as Rob has on his video at 17 mins 20 seconds @done (15-12-30 08:31)
+  ✔ Don't use display:flex on html/css/js/results divs. Copy Rob's way. @done (15-12-30 08:31)
