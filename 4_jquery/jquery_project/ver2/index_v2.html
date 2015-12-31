@@ -113,6 +113,7 @@
 		margin: 0 auto;
 		list-style: none;
 		padding:0;
+		border-radius: 2px;
 	}
 
 	#options li {
@@ -160,6 +161,7 @@
 		background-color: white;
 		outline:none;
 		border-right:solid 1px black;
+		box-sizing:border-box;	
 	}
 
 	.codeLabel {
@@ -169,16 +171,18 @@
 		padding:10px;
 	}
 
-	#cssContainer, #jsContainer {
+	#HTMLContainer, #CSSContainer, #JSContainer, #ResultContainer {
 		display: none;
 	}
 
 	iframe {
 		position: relative;
-		left:20px;
-		height:100%;
+/*		left:20px;
+*/		height:100%;
 		width:100%;
 		border: none;
+		box-sizing:border-box;
+		border:solid 1px black;
 	}
 
 	</style>
@@ -200,10 +204,10 @@
 			<div id="optionsDiv">	
 
 				<ul id="options">
-					<li id="htmlSelector" class="button">HTML</li>
-					<li id="cssSelector" class="button">CSS</li>
-					<li id="jsSelector" class="button">JS</li>
-					<li id="resultSelector" class="button">Result</li>
+					<li class="button">HTML</li>
+					<li class="button">CSS</li>
+					<li class="button">JS</li>
+					<li class="button">Result</li>
 				</ul>
 
 			</div>
@@ -212,36 +216,36 @@
 
 		<div class="clear"></div>
 
-			<div id="htmlContainer" class="codeContainer">
+			<div id="HTMLContainer" class="codeContainer">
 			
 				<div class="codeLabel">HTML</div>
 
-				<textarea>Test</textarea>
+				<textarea id="htmlCode"><div id="test"></div></textarea>
 			
 			</div>
 
-			<div id="cssContainer" class="codeContainer">
+			<div id="CSSContainer" class="codeContainer">
 			
 				<div class="codeLabel">CSS</div>
 
-				<textarea>Test</textarea>
+				<textarea id="cssCode">html {background-color: blue}</textarea>
 			
 			</div>
 
 
-			<div id="jsContainer" class="codeContainer">
+			<div id="JSContainer" class="codeContainer">
 			
-				<div class="codeLabel">Test</div>
+				<div class="codeLabel">JavaScript</div>
 
-				<textarea>Test</textarea>
+				<textarea id="jsCode">document.getElementById("test").innerHTML="test successful!";</textarea>
 			
 			</div>
 
-			<div id="resultContainer" class="codeContainer">
+			<div id="ResultContainer" class="codeContainer">
 			
 				<div class="codeLabel">Result</div>
 
-				<iframe></iframe>
+				<iframe id="resultFrame"></iframe>
 			
 			</div>
 
@@ -253,26 +257,44 @@
 	<script>
 
 	var windowHeight = $(window).height();
-
-	console.log("window height = "+windowHeight);
-
 	var menuBarHeight = $('#header').height();
-
-	console.log("menu height = "+menuBarHeight);
-
-	var bodyHeight=windowHeight-menuBarHeight;
-
-	console.log("body height = "+bodyHeight);
+	var bodyHeight=windowHeight-menuBarHeight-2;
 
 	$(".codeContainer").outerHeight(bodyHeight+"px");
 
-	$("#htmlContainer textarea").outerHeight(bodyHeight+"px");
+	$("#HTMLContainer textarea").outerHeight(bodyHeight+"px");
 
-	$('li.button').click(function() {
+	$('.button').click(function() {
 
-		$('li:focus').toggle();
 		$(this).toggleClass('clicked');
-		return false;
+
+		var activeDiv = '#'+$(this).html() + "Container";
+
+		$(activeDiv).toggle();
+
+		var showingDivs=$('.codeContainer').filter(function() {
+
+			return($(this).css("display")!="none");
+
+		}).length;
+
+		console.log(showingDivs);
+
+		var divWidth=100/showingDivs;
+
+		console.log(divWidth);
+
+		$(".codeContainer").width(divWidth+"%");
+
+	});
+
+	console.log($("iframe").contents());
+
+	$("#runButton").click(function() {
+
+		$("iframe").contents().find("html").html('<style>'+$("#cssCode").val()+'</style>'+$("#htmlCode").val());
+
+		document.getElementById("resultFrame").contentWindow.eval($("#jsCode").val());
 
 	});
 
