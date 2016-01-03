@@ -1,0 +1,12 @@
+/* This is a customer css file for my CWDC index.html.|
+
+/* Only use if absolutely needed, to adjust padding / margins on specific elements.
+
+/*h1, h2 {
+	margin:10px 0 10px 0;
+}
+
+#showme {
+	position: relative;
+	top: 20px;
+/*
