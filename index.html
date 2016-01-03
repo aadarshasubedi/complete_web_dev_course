@@ -88,6 +88,7 @@
       <h1>To Do - 03/01/2016</h1>
 
       <ul class="list-group">
+        <li class="list-group-item">Add collapsible menu headers as per the following: <a href="https://jsfiddle.net/Wc4xt/1052/">https://jsfiddle.net/Wc4xt/1052/</a></li>
         <li class="list-group-item">Modify navbar to add in dropdowns where needed</li>
         <li class="list-group-item">Add notes for each section of course</li>
         <li class="list-group-item">Link each navbar button to scroll down to each section, with my notes added & a link to the actual page</li>
@@ -104,17 +105,41 @@
       
       <hr />
 
-      <h2><a href="http://billbatey.co.uk/cwdc/1_html/index.html">HTML</a></h2>
+        <h2 class="Collapsible"><a href="">HTML</a></h2>
 
-      <h2><a href="http://billbatey.co.uk/cwdc/2_css/index.html">CSS</a></h2>
+        <div id="HTMLCollapsible">
+          <p>This is my HTML stuff. Bla bla bla.<p>
+        </div>  
 
-      <h2><a href="http://billbatey.co.uk/cwdc/3_javascript/index.html">JavaScript</a></h2>
- 
-      <h2><a href="http://billbatey.co.uk/cwdc/4_jquery/index.html">jQuery</a></h2>
+        <h2 class="Collapsible"><a href="">CSS</a></h2>
 
-      <h2><a href="http://billbatey.co.uk/cwdc/5_bootstrap/index.html">Bootstrap</a></h2>
+        <div>
+          <p>This is my CSS stuff.<p>
+        </div>
 
-      <h2>More...</h2>
+        <h2 class="Collapsible"> <a href="">JavaScript</a></h2>
+   
+        <div>
+          <p>Here goes JavaScript</p>
+        </div>
+
+        <h2 class="Collapsible"><a href="">jQuery</a></h2>
+
+        <div>
+          <p>And here jQuery<p>
+        </div>
+
+        <h2 class="Collapsible"><a href="">Bootstrap</a></h2>
+
+        <div>
+          <p>Here goes Bootstrap</p>
+        </div>
+
+        <h2 class="Collapsible"><a href="">More...</a></h2>
+
+        <div>
+          <p>And here everything else...<p>
+        </div>
 
     </div>
 
@@ -128,8 +153,10 @@
       </footer>
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+
   </body>
 </html>
