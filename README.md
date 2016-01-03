@@ -1,5 +1,5 @@
 # The Complete Web Developer Course 
-## by Rob Percival
+by Rob Percival
 
 24-12-2015
 ---------
