@@ -1,6 +1,6 @@
-# complete_web_dev_course
+# The Complete Web Developer Course 
 
-The Complete Web Developer Course - Build 14 Websites by Rob Percival
+Build 14 Websites by Rob Percival
 
 24-12-2015
 ---------
