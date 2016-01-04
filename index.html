@@ -20,8 +20,8 @@
     <![endif]-->
   </head>
   <body>
-
-      <nav class="navbar navbar-default">
+<!-- 
+      <div class="navbar navbar-default" id="topNavbar">
 
         <div class="container">
 
@@ -37,22 +37,17 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
 
+              </button>
+
             </div>
 
             <div class="collapse navbar-collapse">
 
               <ul class="nav navbar-nav">
 
-                <li><a href="http://billbatey.co.uk/cwdc/1_html/index.html">HTML</a></li>
+                <li><a href="#collapseHTML">HTML</a></li>
 
-                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CSS <span class="caret"></span></a>
-
-                  <ul class="dropdown-menu">
-                    <li><a href="http://billbatey.co.uk/new_site/index.html">My Website (beta!)</a></li>
-                    <li><a href="http://billbatey.co.uk/cwdc/2_css/CSS%20Project/bbc%20(ver3-restart).html">BBC Website</a></li>
-                    <li><a href="http://billbatey.co.uk/cwdc/2_css/index.html">Basic CSS</a></li>
-                  </ul>
-                </li>
+                <li><a href="#collapseCSS">CSS</a></li>
 
                 <li><a href="http://billbatey.co.uk/cwdc/3_javascript/index.html">Javascript</a></li>
 
@@ -68,14 +63,14 @@
 
           </div>
 
-    </div>
+        </div> -->
 
     <div class="jumbotron">
 
       <div class="container">
 
-      <p><h1>The Complete Web Developer Course</h1></p>
-      <p><h2>by Rob Percival</h2></p>
+      <h1>The Complete Web Developer Course</h1>
+      <h2>by Rob Percival</h2>
 
       <p>This is an index page to track my progress on this fantastic course!</p>
 
@@ -85,61 +80,166 @@
 
     <div class="container">
 
-      <h1>To Do - 03/01/2016</h1>
+      <div class="row">
 
-      <ul class="list-group">
-        <li class="list-group-item">Add collapsible menu headers as per the following: <a href="https://jsfiddle.net/Wc4xt/1052/">https://jsfiddle.net/Wc4xt/1052/</a></li>
-        <li class="list-group-item">Modify navbar to add in dropdowns where needed</li>
-        <li class="list-group-item">Add notes for each section of course</li>
-        <li class="list-group-item">Link each navbar button to scroll down to each section, with my notes added & a link to the actual page</li>
-        <li class="list-group-item">Make each section header an accordion(?) that drops down to reveal contents</li>
-      </ul>
+        <div class="col-md-9" role="main" id="mainBody">
 
-      <hr />
+        <h1>To Do - 04/01/2016</h1>
 
-      <h1>To Do - Upcoming</h1>
+        <ul class="list-group">
 
-      <ul class="list-group">
-        <li class="list-group-item">Remake this page (or do another simple site) using jekyll</li>
-      </ul>
-      
-      <hr />
+          <li class="list-group-item">Restructure these to do lists. Hide completed sections in their own collapsible element.</li>
+          <li class="list-group-item">Add hover tooltips to section headers <em>(CSS or HTML?)</em></li>
+          <li class="list-group-item">Add scrolling sidebar, like the bootstrap page here: <a href="https://getbootstrap.com/components/">https://getbootstrap.com/components/</a></li>
+          <li class="list-group-item">Add notes for each section of course</li>
+          
+          <h2><s>To Do - 03/01/2016</s></h2>
 
-        <h2 class="Collapsible"><a href="">HTML</a></h2>
+          <li class="list-group-item"><s>Add collapsible menu headers as per the following: <a href="https://jsfiddle.net/Wc4xt/1052/">https://jsfiddle.net/Wc4xt/1052/</a></s> <strong><em>Done. 04/01/2016.</em></strong> </li>
+          <li class="list-group-item"><s>Modify navbar to add in dropdowns where needed</s><strong><em> Removed nav bar. Not really needed. 04/01/2016.</em></strong></li>
+          <li class="list-group-item"><s>Link each navbar button to scroll down to each section, with my notes added & a link to the actual page</s><strong><em> No longer needed. 04/01/2016</em></strong></li>
+          <li class="list-group-item"><s>Make each section header an accordion(?) that drops down to reveal contents</s><strong><em> Done. Why was this on here twice?? 04/01/2015.</strong></em></li>
+        </ul>
 
-        <div id="HTMLCollapsible">
-          <p>This is my HTML stuff. Bla bla bla.<p>
-        </div>  
+        <hr />
 
-        <h2 class="Collapsible"><a href="">CSS</a></h2>
+        <h1>To Do - Upcoming</h1>
 
-        <div>
-          <p>This is my CSS stuff.<p>
+        <ul class="list-group">
+          <li class="list-group-item">Remake this page (or do another simple site) using jekyll</li>
+        </ul>
+        
+        <hr />
+
+        <h1>Course Subject Sections</h1>
+
+        <p>Click a heading to reveal notes</p>
+
+        <div class="accordion-heading">
+        <h2><a class="accordion-toggle"
+             data-toggle="collapse"
+             href="#collapseHTML"
+             title="Click to show the HTML notes section">HTML</a></h2>
+
         </div>
 
-        <h2 class="Collapsible"> <a href="">JavaScript</a></h2>
-   
-        <div>
-          <p>Here goes JavaScript</p>
+          <div id="collapseHTML"
+               class="accordion-body collapse"
+               data-toggle="false">
+
+
+                  <div class="accordion-toggle">
+
+                    This is my HTML stuff.
+
+                  </div>
+
+          </div>
+
+        <div class="accordion-heading">
+        <h2><a class="accordion-toggle"
+             data-toggle="collapse"
+             href="#collapseCSS">CSS</a></h2>
+
         </div>
 
-        <h2 class="Collapsible"><a href="">jQuery</a></h2>
+          <div id="collapseCSS"
+               class="accordion-body collapse"
+               data-toggle="false">
 
-        <div>
-          <p>And here jQuery<p>
+
+                  <div class="accordion-toggle">
+
+                    This is my CSS stuff.
+
+                  </div>
+
+          </div>
+
+          
+          <div class="accordion-heading">
+          <h2><a class="accordion-toggle"
+             data-toggle="collapse"
+             href="#collapseJavascript"></a></h2>
+
+          </div>
+
+          <div id="collapseJavascript"
+               class="accordion-body collapse"
+               data-toggle="false">
+
+
+                  <div class="accordion-toggle">
+
+                    This is my Javascript stuff.
+
+                  </div>
+
+          </div>
+
+          <div class="accordion-heading">
+          <h2><a class="accordion-toggle"
+             data-toggle="collapse"
+             href="#collapseJquery">jQuery</a></h2>
+
         </div>
 
-        <h2 class="Collapsible"><a href="">Bootstrap</a></h2>
+          <div id="collapseJquery"
+               class="accordion-body collapse"
+               data-toggle="false">
 
-        <div>
-          <p>Here goes Bootstrap</p>
+
+                  <div class="accordion-toggle">
+
+                    This is my jQuery stuff.
+
+                  </div>
+
+          </div>
+
+          <div class="accordion-heading">
+          <h2><a class="accordion-toggle"
+             data-toggle="collapse"
+             href="#collapseBootstrap">Bootstrap</a></h2>
+
         </div>
 
-        <h2 class="Collapsible"><a href="">More...</a></h2>
+          <div id="collapseBootstrap"
+               class="accordion-body collapse"
+               data-toggle="false">
 
-        <div>
-          <p>And here everything else...<p>
+
+                  <div class="accordion-toggle">
+
+                    This is my Bootstrap stuff.
+
+                  </div>
+
+          </div>
+
+          <div class="accordion-heading">
+          <h2><a class="accordion-toggle"
+             data-toggle="collapse"
+             href="#collapseMore">More</a></h2>
+
         </div>
+
+          <div id="collapseMore"
+               class="accordion-body collapse"
+               data-toggle="false">
+
+
+                  <div class="accordion-toggle">
+
+                    This is more stuff.
+
+                  </div>
+
+          </div>
+
+        </div>
+
+      </div>
 
     </div>
 
@@ -148,8 +248,7 @@
     <div class="container">
 
       <footer>
-        <p>© 2015 <a href="http://www.billbatey.co.uk/new_site/index.html">Bill Batey</a>
-        </div>
+        <p>© 2015 <a href="http://www.billbatey.co.uk/new_site/index.html">Bill Batey</a><p>
       </footer>
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
