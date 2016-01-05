@@ -106,12 +106,14 @@
         <h1>To Do - Upcoming</h1>
 
         <ul class="list-group">
-          <li class="list-group-item">Remake this page (or do another simple site) using jekyll</li>
+          <li class="list-group-item">Remake this page (or do another simple site) using jekyll & markdown</li>
         </ul>
         
         <hr />
 
-        <h1>Course Subject Sections</h1>
+        <h1
+        data-toggle="popover"
+        data-content="test">Course Subject Sections</h1>
 
         <p>Click a heading to reveal notes</p>
 
@@ -119,7 +121,8 @@
         <h2><a class="accordion-toggle"
              data-toggle="collapse"
              href="#collapseHTML"
-             title="Click to show the HTML notes section">HTML</a></h2>
+             data-toggle="popover"
+             data-content="Click to show the HTML notes section">HTML</a></h2>
 
         </div>
 
@@ -256,6 +259,16 @@
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+
+    $('[data-toggle="popover"]').popover({
+      trigger: 'hover',
+      placement: 'top'
+
+    });
+
+    </script>
 
   </body>
 </html>
