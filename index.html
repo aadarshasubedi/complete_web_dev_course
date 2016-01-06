@@ -107,13 +107,9 @@
 
         <div class="col-md-9" role="main" id="mainBody">
 
-        <h1><a data-toggle="collapse" href="#toDoLists">To Do
-                                                          <span class="pull-right glyphicon glyphicon-triangle-right"
-                                                                rel="tooltip"
-                                                                title="Click to show/hide the to do list section">
-                                                          </span></a></h1>
+        <h1 id="toDo">To Do</h1>
 
-        <div class="collapse" id="toDoLists">
+        <div class="collapse in" id="toDoLists">
 
           <h3><a data-toggle="collapse" href="#toDo04012016">04/01/2016
                                                                 <span class="pull-right glyphicon glyphicon-triangle-bottom">
@@ -167,13 +163,9 @@
         
         <hr />
 
-        <h1><a data-toggle="collapse" href="#subjects">Course Subject Sections
-                                                          <span class="pull-right glyphicon glyphicon-triangle-right"
-                                                                rel="tooltip"
-                                                                title="Click to show/hide the course subject section">
-                                                          </span></a></h1>
+        <h1 id="courseSections">Course Subject Sections</h1>
 
-        <div class="collapse" id="subjects">                                                          
+        <div class="collapse in" id="subjects">                                                          
 
           <div class="accordion-heading" id="html-heading">
           <h3><a class="accordion-toggle"
@@ -185,7 +177,7 @@
           </div>
 
             <div id="collapseHTML"
-                 class="accordion-body collapse"
+                 class="accordion-body collapse in"
                  data-toggle="false">
 
 
@@ -308,13 +300,41 @@
 
           </div>
 
-          </div>
-
         </div>
 
       </div>
 
+      <div class="col-md-3" role="complementary">
+
+        <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix-top">
+
+          <ul class="nav bs-docs sidenav">
+
+            <li><a href="#toDo">To Do</a>
+
+            <ul class="nav">
+              
+              <li><a href="#toDo04012016">04/01/2016</a></li>
+              <li><a href="#toDo03012016">03/01/2016</a></li>
+              <li><a href="#toDoUpcoming">In The Future</a></li>
+
+            </ul>
+            </li>
+
+
+            <li><a href="#courseSections">Course Sections</a></li>
+
+          </ul>
+
+          <a class="back-to-top" href="#top"> Back to top</a>
+
+        </nav>
+
+      </div>
+
     </div>
+
+  </div>
 
     <hr />
 
