@@ -6,19 +6,49 @@ Only use if absolutely needed, to adjust padding / margins on specific elements.
 
 */
 
-/*h1, h2 {
-	margin:10px 0 10px 0;
+/*.ui-tooltip {
+	background-color: #EEEEEE;
+	border-radius:5px;
 }
 
-#showme {
-	position: relative;
-	top: 20px;
-*/
-/*
-.navbar.navbar-default {
-	margin: 0 0 0 0;
+.ui-tooltip-content {
+	font-family: sans-serif;
+	font-size: 1em;
 }*/
 
-/*#mainBody {
-	padding: 0;
-}*/
+.jumbotron p {
+	margin:30px 0 0 0;
+}
+
+#mainBody a {
+	color:#333;
+}
+
+.completeHeader a {
+	color:#b7b7b7 !important;
+}
+
+/*
+.accordion-heading a::before {
+	font-family:'Glyphicons Halflings';
+    content:"\e080";
+    float: right;
+    color: grey;
+}
+
+.accordion-heading a.collapsed::before {
+   content:"\e114";
+}
+
+#html-heading a::before {
+	font-family:'Glyphicons Halflings';
+    content:"\e114";
+    float: right;
+    color: grey;
+}
+
+
+#html-heading a.collapsed::before {
+    content:"\e080";
+}
+*/

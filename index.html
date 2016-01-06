@@ -6,10 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="This is the contents page for my progress on Rob Percival's complete web developer udemy course."/>
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
     <title>The Complete Web Developer Course</title>
 
     <!-- Bootstrap -->
+
     <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <!-- jQuery UI Theme -->
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <!-- My Custom CSS -->
+
     <link href="css/custom.css" type="text/css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -18,9 +25,25 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- My javascript file, includes: tooltips & glyphicon arrow on show/hide section -->
+
+    <script src="js/javascript.js"></script>
+
   </head>
+
   <body>
-<!-- 
+  <!-- 
       <div class="navbar navbar-default" id="topNavbar">
 
         <div class="container">
@@ -29,7 +52,7 @@
 
               <a href='' class="navbar-brand active">Home</a>
 
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <button type="utton" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 
                 <span class="sr-only">Toggle navigation</span>
 
@@ -70,7 +93,7 @@
       <div class="container">
 
       <h1>The Complete Web Developer Course</h1>
-      <h2>by Rob Percival</h2>
+      <h3>by Rob Percival</h2>
 
       <p>This is an index page to track my progress on this fantastic course!</p>
 
@@ -84,159 +107,206 @@
 
         <div class="col-md-9" role="main" id="mainBody">
 
-        <h1>To Do - 04/01/2016</h1>
+        <h1><a data-toggle="collapse" href="#toDoLists">To Do
+                                                          <span class="pull-right glyphicon glyphicon-triangle-right"
+                                                                rel="tooltip"
+                                                                title="Click to show/hide the to do list section">
+                                                          </span></a></h1>
 
-        <ul class="list-group">
+        <div class="collapse" id="toDoLists">
 
-          <li class="list-group-item">Restructure these to do lists. Hide completed sections in their own collapsible element.</li>
-          <li class="list-group-item">Add hover tooltips to section headers <em>(CSS or HTML?)</em></li>
-          <li class="list-group-item">Add scrolling sidebar, like the bootstrap page here: <a href="https://getbootstrap.com/components/">https://getbootstrap.com/components/</a></li>
-          <li class="list-group-item">Add notes for each section of course</li>
-          
-          <h2><s>To Do - 03/01/2016</s></h2>
+          <h3><a data-toggle="collapse" href="#toDo04012016">04/01/2016
+                                                                <span class="pull-right glyphicon glyphicon-triangle-bottom">
+                                                                </span></a></h3>
 
-          <li class="list-group-item"><s>Add collapsible menu headers as per the following: <a href="https://jsfiddle.net/Wc4xt/1052/">https://jsfiddle.net/Wc4xt/1052/</a></s> <strong><em>Done. 04/01/2016.</em></strong> </li>
-          <li class="list-group-item"><s>Modify navbar to add in dropdowns where needed</s><strong><em> Removed nav bar. Not really needed. 04/01/2016.</em></strong></li>
-          <li class="list-group-item"><s>Link each navbar button to scroll down to each section, with my notes added & a link to the actual page</s><strong><em> No longer needed. 04/01/2016</em></strong></li>
-          <li class="list-group-item"><s>Make each section header an accordion(?) that drops down to reveal contents</s><strong><em> Done. Why was this on here twice?? 04/01/2015.</strong></em></li>
-        </ul>
+          <div class="collapse in" id="toDo04012016">
 
-        <hr />
+            <ul class="list-group">
 
-        <h1>To Do - Upcoming</h1>
+              <li class="list-group-item">Add notes for each section of course</li>
+              <li class="list-group-item">Add scrolling sidebar, like the bootstrap page here: <a href="https://getbootstrap.com/components/">https://getbootstrap.com/components/</a></li>
+              <li class="list-group-item"><s>Restructure these to do lists. Hide completed sections in their own collapsible element. </s><strong><em>Completed on 06/01/2016</em></strong></li>
+              <li class="list-group-item"><s>Add hover tooltips to section headers <em>(CSS or HTML?)</em></s> <strong><em>Done on 06/01/2016. Used jQuery tooltip function. Also added arrows to collapsible headers</em></strong></li>
 
-        <ul class="list-group">
-          <li class="list-group-item">Remake this page (or do another simple site) using jekyll & markdown</li>
-        </ul>
+            </ul>
+
+          </div>
+              
+            <h3 class="completeHeader"><s><a data-toggle="collapse" href="#toDo03012016">03/01/2016</s>
+                                                                    <span class="pull-right glyphicon glyphicon-triangle-right">
+                                                                    </span></a></h1></a></h3>
+
+          <div class="collapse" id="toDo03012016">
+
+            <ul class="list-group">
+
+              <li class="list-group-item"><s>Add collapsible menu headers as per the following: <a href="https://jsfiddle.net/Wc4xt/1052/">https://jsfiddle.net/Wc4xt/1052/</a></s> <strong><em>Done. 04/01/2016.</em></strong> </li>
+              <li class="list-group-item"><s>Modify navbar to add in dropdowns where needed</s><strong><em> Removed nav bar. Not really needed. 04/01/2016.</em></strong></li>
+              <li class="list-group-item"><s>Link each navbar button to scroll down to each section, with my notes added & a link to the actual page</s><strong><em> No longer needed. 04/01/2016</em></strong></li>
+              <li class="list-group-item"><s>Make each section header an accordion(?) that drops down to reveal contents</s><strong><em> Done. Why was this on here twice?? 04/01/2015.</strong></em></li>
+            
+            </ul>
+
+          </div>
+
+          <hr />
+
+          <h3><a data-toggle="collapse" href="#toDoUpcoming">In the future
+                                                                <span class="pull-right glyphicon glyphicon-triangle-right">
+                                                                </span></a></h3>
+
+          <div class="collapse" id="toDoUpcoming">
+
+            <ul class="list-group">
+              <li class="list-group-item">Remake this page (or do another simple site) using jekyll & markdown</li>
+            </ul>
+
+          </div>
+
+        </div>
         
         <hr />
 
-        <h1
-        data-toggle="popover"
-        data-content="test">Course Subject Sections</h1>
+        <h1><a data-toggle="collapse" href="#subjects">Course Subject Sections
+                                                          <span class="pull-right glyphicon glyphicon-triangle-right"
+                                                                rel="tooltip"
+                                                                title="Click to show/hide the course subject section">
+                                                          </span></a></h1>
 
-        <p>Click a heading to reveal notes</p>
+        <div class="collapse" id="subjects">                                                          
 
-        <div class="accordion-heading">
-        <h2><a class="accordion-toggle"
-             data-toggle="collapse"
-             href="#collapseHTML"
-             data-toggle="popover"
-             data-content="Click to show the HTML notes section">HTML</a></h2>
-
-        </div>
-
-          <div id="collapseHTML"
-               class="accordion-body collapse"
-               data-toggle="false">
-
-
-                  <div class="accordion-toggle">
-
-                    This is my HTML stuff.
-
-                  </div>
+          <div class="accordion-heading" id="html-heading">
+          <h3><a class="accordion-toggle"
+               data-toggle="collapse"
+               href="#collapseHTML">HTML<span class="pull-right glyphicon glyphicon-triangle-bottom"
+                                              rel="tooltip"
+                                              title="Click to show/hide the HTML notes section"></span></a></h3>
 
           </div>
 
-        <div class="accordion-heading">
-        <h2><a class="accordion-toggle"
-             data-toggle="collapse"
-             href="#collapseCSS">CSS</a></h2>
-
-        </div>
-
-          <div id="collapseCSS"
-               class="accordion-body collapse"
-               data-toggle="false">
+            <div id="collapseHTML"
+                 class="accordion-body collapse"
+                 data-toggle="false">
 
 
-                  <div class="accordion-toggle">
+                    <div class="accordion-toggle">
 
-                    This is my CSS stuff.
+                      This is my HTML stuff.
 
-                  </div>
+                    </div>
 
-          </div>
-
-          
-          <div class="accordion-heading">
-          <h2><a class="accordion-toggle"
-             data-toggle="collapse"
-             href="#collapseJavascript"></a></h2>
-
-          </div>
-
-          <div id="collapseJavascript"
-               class="accordion-body collapse"
-               data-toggle="false">
-
-
-                  <div class="accordion-toggle">
-
-                    This is my Javascript stuff.
-
-                  </div>
-
-          </div>
+            </div>
 
           <div class="accordion-heading">
-          <h2><a class="accordion-toggle"
-             data-toggle="collapse"
-             href="#collapseJquery">jQuery</a></h2>
-
-        </div>
-
-          <div id="collapseJquery"
-               class="accordion-body collapse"
-               data-toggle="false">
-
-
-                  <div class="accordion-toggle">
-
-                    This is my jQuery stuff.
-
-                  </div>
+          <h3><a class="accordion-toggle"
+               data-toggle="collapse"
+               href="#collapseCSS">CSS<span class="pull-right glyphicon glyphicon-triangle-right"
+                                            rel="tooltip"
+                                            title="Click to show/hide the CSS notes section"></span></a></h3>
 
           </div>
 
-          <div class="accordion-heading">
-          <h2><a class="accordion-toggle"
-             data-toggle="collapse"
-             href="#collapseBootstrap">Bootstrap</a></h2>
-
-        </div>
-
-          <div id="collapseBootstrap"
-               class="accordion-body collapse"
-               data-toggle="false">
+            <div id="collapseCSS"
+                 class="accordion-body collapse"
+                 data-toggle="true">
 
 
-                  <div class="accordion-toggle">
+                    <div class="accordion-toggle">
 
-                    This is my Bootstrap stuff.
+                      This is my CSS stuff.
 
-                  </div>
+                    </div>
+
+            </div>
+
+            
+            <div class="accordion-heading">
+            <h3><a class="accordion-toggle"
+               data-toggle="collapse"
+               href="#collapseJavascript">JavaScript<span class="pull-right glyphicon glyphicon-triangle-right"
+                                                          rel="tooltip"
+                                                          title="Click to show/hide the Javascript notes section"></span></a></h3>
+
+            </div>
+
+            <div id="collapseJavascript"
+                 class="accordion-body collapse"
+                 data-toggle="false">
+
+
+                    <div class="accordion-toggle">
+
+                      This is my Javascript stuff.
+
+                    </div>
+
+            </div>
+
+            <div class="accordion-heading">
+            <h3><a class="accordion-toggle"
+               data-toggle="collapse"
+               href="#collapseJquery">jQuery<span class="pull-right glyphicon glyphicon-triangle-right"
+                                                  rel="tooltip"
+                                                  title="Click to show/hide the jQuery notes section"></span></a></h3>
 
           </div>
 
-          <div class="accordion-heading">
-          <h2><a class="accordion-toggle"
-             data-toggle="collapse"
-             href="#collapseMore">More</a></h2>
-
-        </div>
-
-          <div id="collapseMore"
-               class="accordion-body collapse"
-               data-toggle="false">
+            <div id="collapseJquery"
+                 class="accordion-body collapse"
+                 data-toggle="false">
 
 
-                  <div class="accordion-toggle">
+                    <div class="accordion-toggle">
 
-                    This is more stuff.
+                      This is my jQuery stuff.
 
-                  </div>
+                    </div>
+
+            </div>
+
+            <div class="accordion-heading">
+            <h3><a class="accordion-toggle"
+               data-toggle="collapse"
+               href="#collapseBootstrap">Bootstrap<span class="pull-right glyphicon glyphicon-triangle-right"
+                                                        rel="tooltip"
+                                                        title="Click to show/hide the Bootstrap notes section"></span></a></h3>
+
+          </div>
+
+            <div id="collapseBootstrap"
+                 class="accordion-body collapse"
+                 data-toggle="false">
+
+
+                    <div class="accordion-toggle">
+
+                      This is my Bootstrap stuff.
+
+                    </div>
+
+            </div>
+
+            <div class="accordion-heading">
+            <h3><a class="accordion-toggle"
+               data-toggle="collapse"
+               href="#collapseMore">More<span class="pull-right glyphicon glyphicon-triangle-right"
+                                              rel="tooltip"
+                                              title="Click to show/hide the More notes section"></span></a></h3>
+
+          </div>
+
+            <div id="collapseMore"
+                 class="accordion-body collapse"
+                 data-toggle="false">
+
+
+                    <div class="accordion-toggle">
+
+                      This is more stuff.
+
+                    </div>
+
+          </div>
 
           </div>
 
@@ -254,21 +324,6 @@
         <p>© 2015 <a href="http://www.billbatey.co.uk/new_site/index.html">Bill Batey</a><p>
       </footer>
     </div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <script type="text/javascript">
-
-    $('[data-toggle="popover"]').popover({
-      trigger: 'hover',
-      placement: 'top'
-
-    });
-
-    </script>
 
   </body>
 </html>
