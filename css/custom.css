@@ -20,7 +20,7 @@ Only use if absolutely needed, to adjust padding / margins on specific elements.
 	margin:30px 0 0 0;
 }
 
-#mainBody a {
+#mainBody h3 a {
 	color:#333;
 }
 
