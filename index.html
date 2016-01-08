@@ -107,6 +107,12 @@
 
         <div class="col-md-12" role="main" id="mainBody">
 
+        <h1 id="theCourse"><u>About</u></h1>
+
+        <p>The course can be found on udemy <a href="https://www.udemy.com/complete-web-developer-course/">here</a>.</p>
+
+        <hr />
+
         <h1 id="toDo"><u>To Do</u></h1>
 
         <div class="collapse in" id="toDoLists">
@@ -119,10 +125,10 @@
 
             <ul class="list-group">
 
-              <li class="list-group-item">Add notes for each section of course</li>
               <li class="list-group-item">Finish BBC website CSS project. Do the whole page!</li>
+              <li class="list-group-item"><s>Add notes for each section of course</s><em><strong> Done on 08/01/2016.</strong></em></li>
               <li class="list-group-item"><s>Add scrolling sidebar, like the bootstrap page here: <a href="https://getbootstrap.com/components/">https://getbootstrap.com/components/</a> <em>(This may be quite tricky to get right)</em></s><br /><strong><em>I don't think this is needed anymore. 07/01/2015.</em></strong></li>
-              <li class="list-group-item"><s>Restructure these to do lists. Hide completed sections in their own collapsible element. </s><strong><em>Completed on 06/01/2016</em></strong></li>
+              <li class="list-group-item"><s>Restructure these to do lists. Hide completed sections in their own collapsible element. </s><strong><em>Completed on 06/01/2016.</em></strong></li>
               <li class="list-group-item"><s>Add hover tooltips to section headers <em>(CSS or HTML?)</em></s> <strong><em>Done on 06/01/2016. Used jQuery tooltip function. Also added arrows to collapsible headers</em></strong></li>
 
             </ul>
@@ -182,18 +188,18 @@
 
                     <div class="accordion-toggle">
 
-                      <p>The first section of the course covers HTML.</p>
+<!--                       <p>The first section of the course covers HTML.</p>
 
                       <p>Rob goes through the most commonly used tags and how to format text, make tables, links, forms and inserting images into pages.</p>
 
-                      <p>The project was to make a simple HTML page.</p>
+                      <p>The project was to make a simple HTML page.</p> -->
 
                       <p><strong><a href="http://www.billbatey.co.uk/cwdc/1_html/helloworld.html">Hello world
                       </a></strong></p>
 
                       <p><strong><a href="http://www.billbatey.co.uk/cwdc/1_html/index.html">My first HTML page</a></strong></p>
 
-                      <p style="font-size:1.5em"><strong><a href="http://www.billbatey.co.uk/cwdc/1_html/html_project/index.html">My HTML project</a></strong></p>
+                      <p class="bigPara"><strong><a href="http://www.billbatey.co.uk/cwdc/1_html/html_project/index.html">My HTML project</a></strong></p>
 
                     </div>
 
@@ -231,7 +237,7 @@
                       <p><strong><a href="http://www.billbatey.co.uk/cwdc/2_css/even_more_css2.html">Fifth CSS thing
                       </a></strong></p>
 
-                      <p style="font-size:1.5em"><strong><a href="http://www.billbatey.co.uk/cwdc/2_css/CSS Project/bbc (ver3-restart).html">BBC Website - CSS Project</a></strong> <em style="color:red;">Need to finish this!</em></p>
+                      <p class="bigPara"><strong><a href="http://www.billbatey.co.uk/cwdc/2_css/CSS Project/bbc (ver3-restart).html">BBC Website - CSS Project</a></strong> <em style="color:red;">Need to finish this!</em></p>
 
                     </div>
 
@@ -257,7 +263,7 @@
                       <p><strong><a href="http://www.billbatey.co.uk/cwdc/3_javascript/namecalculator.html">Name tag calculator
                       </a></strong></p>
 
-                      <p style="font-size:1.5em"><strong><a href="http://www.billbatey.co.uk/cwdc/3_javascript/index.html">Reaction Tester - JS Project</a></strong></p>
+                      <p class="bigPara"><strong><a href="http://www.billbatey.co.uk/cwdc/3_javascript/index.html">Reaction Tester - JS Project</a></strong></p>
 
                     </div>
 
@@ -279,7 +285,13 @@
 
                     <div class="accordion-toggle">
 
-                      This is my jQuery stuff.
+                      <p><strong><a href="http://www.billbatey.co.uk/cwdc/4_jquery/index.html">First jQuery thing</a></strong></p>
+
+                      <p class="bigPara"><strong><a href="http://www.billbatey.co.uk/cwdc/4_jquery/jquery_project/ver1/index_v1.html">jQuery Project - Version 1</a></strong></p>
+                      
+                      <p class="bigPara"><strong><a href="http://www.billbatey.co.uk/cwdc/4_jquery/jquery_project/ver2/index_v2.html">jQuery Project - Version 2</a></strong></p>
+
+
 
                     </div>
 
@@ -301,7 +313,8 @@
 
                     <div class="accordion-toggle">
 
-                      This is my Bootstrap stuff.
+                    <p class="bigPara"><strong><a href="http://www.billbatey.co.uk/cwdc/5_bootstrap/index.html">First Bootstrap thing</a></strong></p>
+
 
                     </div>
 
@@ -310,14 +323,14 @@
             <div class="accordion-heading">
             <h3><a class="accordion-toggle"
                data-toggle="collapse"
-               href="#collapseMore">More<span class="pull-right glyphicon glyphicon-triangle-bottom"
+               href="#collapseMore">More<span class="pull-right glyphicon glyphicon-triangle-right"
                                               rel="tooltip"
                                               title="Click to show/hide the More notes section"></span></a></h3>
 
           </div>
 
             <div id="collapseMore"
-                 class="accordion-body collapse in"
+                 class="accordion-body collapse"
                  data-toggle="false">
 
 

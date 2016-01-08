@@ -24,8 +24,16 @@ Only use if absolutely needed, to adjust padding / margins on specific elements.
 	color:#333;
 }
 
+#mainBody p {
+	font-size:1.2em;
+}
+
 .completeHeader a {
 	color:#b7b7b7 !important;
+}
+
+.bigPara {
+	font-size: 1.5em !important;
 }
 
 /*

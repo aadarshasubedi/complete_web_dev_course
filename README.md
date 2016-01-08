@@ -12,4 +12,3 @@ I'm using this repo to keep track of my progress on Rob Percival's 'The Complete
 I will be making commits as I make progress, to keep my knowledge of git & github sharp.
 
 Use the command line to learn all the necessary git commands rather than a GUI application.
-
