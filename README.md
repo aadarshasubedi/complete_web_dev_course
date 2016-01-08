@@ -1,5 +1,5 @@
 # The Complete Web Developer Course 
-by Rob Percival
+## by Rob Percival
 
 ##08/01/2016
 The index page which links all of my work on this course can be found at the following link:
@@ -7,7 +7,6 @@ The index page which links all of my work on this course can be found at the fol
 [http://www.billbatey.co.uk/cwdc/index.html](http://www.billbatey.co.uk/cwdc/index.html)
 
 ##24-12-2015
----
 I'm using this repo to keep track of my progress on Rob Percival's 'The Complete Web Developer Course'.
 
 I will be making commits as I make progress, to keep my knowledge of git & github sharp.
