@@ -5,7 +5,6 @@ by Rob Percival
 The index page which links all of my work on this course can be found at the following link:
 
 [http://www.billbatey.co.uk/cwdc/index.html](http://www.billbatey.co.uk/cwdc/index.html)
----
 
 ##24-12-2015
 ---
