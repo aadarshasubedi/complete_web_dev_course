@@ -1,3 +1,10 @@
+# 09/01/2016
+
+Continuing the bootstrap sectio nof course now. Taking on this project has been very educational though. Having a problem to solve or an outcome in mind
+helps focus in on achieving that outcome, rather than simply learning things for the sake of learning.
+
+Apply everything you learn as soon as possible to solve real world problems right away. Focus on the end result.
+
 # 08/01/2016
 
 Made index page with bootstrap to link all parts of project so far.
