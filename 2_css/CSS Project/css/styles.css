@@ -412,3 +412,28 @@ body {
         margin: 0 0 0 10px;
         top:200px;
     }*/
+
+    .side_stories {
+        margin:0 0 0 15px;
+        overflow: hidden;
+/*        border:solid 1px black;
+*/        float:left;
+        background-color: #EEEEEE;
+        width:338px;
+        height:800px;
+        position:relative;
+        top:-90px;
+    }
+
+    .side_stories h2 {
+        padding-left: 4px;
+        color:#505050;
+        margin:8px 0 6px 5px;
+        font-size: 1.85em;
+        letter-spacing: -1px;
+    }
+
+
+    .side_image {
+        margin: 0 10px 0 10px;
+    }
