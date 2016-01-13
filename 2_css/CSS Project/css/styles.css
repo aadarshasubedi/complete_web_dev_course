@@ -428,12 +428,30 @@ body {
     .side_stories h2 {
         padding-left: 4px;
         color:#505050;
-        margin:8px 0 6px 5px;
+        margin:8px 0 10px 5px;
         font-size: 1.85em;
         letter-spacing: -1px;
     }
 
+    .feature-header {
+        color:#1f4f82;
+        margin: 10px 0 0 0;
+        position: relative;
+        bottom:12px;
+    }
 
-    .side_image {
-        margin: 0 10px 0 10px;
+    .side_stories ul {
+        padding:0 5px 0 5px;
+        list-style: none;
+    }
+
+    .side_stories li {
+        padding:0 0 0 120px;
+    }
+
+    #toxic_topic {
+        background-image:url(../images/side_image1.png);
+        background-repeat:no-repeat;
+        background-position: left;
+        overflow:auto;
     }
