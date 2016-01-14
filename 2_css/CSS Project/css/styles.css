@@ -109,7 +109,7 @@ body {
     #newsbar {
         position: relative;
         top:-128px;
-        background-color: rgba(153, 0, 0, 0);
+        background-color: rgba(153, 0, 0, 0) !important;
         width:100%;
         margin: 0;
         padding: 0px 10px 0px 10px;
@@ -435,9 +435,7 @@ body {
 
     .feature-header {
         color:#1f4f82;
-        margin: 10px 0 0 0;
-        position: relative;
-        bottom:12px;
+        margin: 0;
     }
 
     .side_stories ul {
@@ -446,7 +444,11 @@ body {
     }
 
     .side_stories li {
-        padding:0 0 0 120px;
+        padding:0 0 5px 120px;
+    }
+
+    .side_stories p {
+        padding:7px 0 12px 0;
     }
 
     #toxic_topic {
@@ -455,3 +457,39 @@ body {
         background-position: left;
         overflow:auto;
     }
+    
+    #counting_colours {
+        background-image:url(../images/side_image2.png);
+        background-repeat:no-repeat;
+        background-position: left;
+        overflow:auto;
+    }
+
+    #angle_of_descent {
+        background-image:url(../images/side_image3.png);
+        background-repeat:no-repeat;
+        background-position: left;
+        overflow:auto;
+    }
+
+    #lessons_from_history {
+        background-image:url(../images/side_image4.png);
+        background-repeat:no-repeat;
+        background-position: left;
+        overflow:auto;
+    }
+
+    #true_grit {
+        background-image:url(../images/side_image5.png);
+        background-repeat:no-repeat;
+        background-position: left;
+        overflow:auto;
+    }
+
+    #party_like_2099 {
+        background-image:url(../images/side_image6.png);
+        background-repeat:no-repeat;
+        background-position: left;
+        overflow:auto;
+    }
+
