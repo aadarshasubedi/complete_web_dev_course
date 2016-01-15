@@ -9,12 +9,32 @@ body {
         font-weight:bold;
     }
 
-    #topbar {
+    #red_masthead_full {
+        width:100%;
+        background-color: rgba(153, 0, 0, 1);
+    }
+
+    #red_masthead {
+        margin:0 auto;
+        padding:0;
+        height:128px;
+        width:982px;
+        position: relative;
+        left:50px;
+    }
+
+    #topbar_full { 
         position: relative;
         top:-128px;
-        background-color: rgba(30, 0, 0, 0.3);
         width:100%;
-        padding: 0px 10px 0px 10px;
+        z-index: 0;
+        background-color: rgba(30, 0, 0, 0.5);
+
+    }
+
+    #topbar {
+        background-color: rgba(30, 0, 0, 0);
+        width:982px;
         margin: 0 auto;
         height:40px;
         color:white;
@@ -51,6 +71,14 @@ body {
         float:left;
         margin:0;
         padding:0;
+    }
+
+    #topmenudiv a {
+        color: white;
+    }
+
+    #topmenudiv a:hover {
+        text-decoration: none;
     }
 
     #topmenudiv li {
@@ -98,19 +126,12 @@ body {
         clear:both;
     }
 
-    #red_masthead {
-        margin:0 auto;
-        height:128px;
-        width:100%;
-    }
-
     #newsbar {
         position: relative;
         top:-128px;
         background-color: rgba(153, 0, 0, 0);
-        width:100% !important;
+        width:100%;
         margin: 0;
-        padding: 0px 10px 0px 10px;
         height:88px;
         color:white;
         font-family: Arial, Helmet, Freesans, sans-serif;
@@ -159,11 +180,10 @@ body {
         background-color:#3E0C0D;
         padding:5px 0 4px 0px;
         margin:0;
-        width:975px;
+        width:978px;
         height:15px;
         position: relative;
         top:5px;
-        right:8px;
     }
 
     #topicmenu li {
@@ -174,11 +194,18 @@ body {
         float:left;
     }
 
+    #topicmenu a {
+        color:white;
+    }
+
+     #topicmenu .selected a {
+        color:#505050;
+    }
+
     .selected {
         -webkit-font-smoothing: antialiased;
         font-weight: bold;
         background-color: #EDEDED;
-        color:#505050;
         height:12px;
         padding:5px 7px 7px 6px !important;
         position: relative;
