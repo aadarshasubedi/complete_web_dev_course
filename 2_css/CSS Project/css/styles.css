@@ -402,6 +402,8 @@ body {
         float:right;
         display: inline;
         width:336px;
+        position: relative;
+        right:7px;
     }
 
     .sub_stories {
@@ -447,7 +449,7 @@ body {
     .side_stories h2 {
         padding-left: 4px;
         color:#505050;
-        margin:5px 0 5px 5px;
+        margin:5px 0 5px 0;
         font-size: 1.9em;
         letter-spacing: -1px;
     }
