@@ -554,8 +554,11 @@ body {
     }
 
     #also-in-the-news {
-        width:624px;dfdf
+        position: relative;
+        width:624px;
         padding-top: 0;
+        margin: 0 0 12px;
+        overflow:visible;
     }
 
     #also-in-the-news h2 {
@@ -575,9 +578,22 @@ body {
         width: 177px;
     }
 
+    .small-image img {
+        display: inline;
+        float: left;
+        height: 63px;
+        margin-left: -115px;
+        margin-top: 3px;
+        width: 112px;
+        position: relative;
+        left: -11px;
+    }
+
     .column-1 {
         float: left;
         clear: left;
         display: inline;
-        margin-left: -320px;
+        position: relative;
+        /*margin-left: -320px;*/
+        overflow: visible;
     }
