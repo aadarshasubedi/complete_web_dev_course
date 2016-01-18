@@ -502,7 +502,7 @@ body {
     #further_stories {
         clear:left;
         width: 610px;
-        margin: 10px 2px 10px 2px;
+        margin: 10px 2px 0 2px;
         padding-bottom: 10px;
         overflow:auto;
         border-bottom: 1px solid #ddd;
@@ -551,4 +551,33 @@ body {
         font-size: 11px;
         font-weight: bold;
         color: #9A0303;
+    }
+
+    #also-in-the-news {
+        width:624px;dfdf
+        padding-top: 0;
+    }
+
+    #also-in-the-news h2 {
+        margin:0;
+        color: #505050;
+        font-size: 1.846em;
+    }
+
+    #also-in-the-news ul {
+        list-style: none;
+    }
+
+    
+    .small-image {
+        padding-bottom: 10px;
+        padding-left: 126px;
+        width: 177px;
+    }
+
+    .column-1 {
+        float: left;
+        clear: left;
+        display: inline;
+        margin-left: -320px;
     }
