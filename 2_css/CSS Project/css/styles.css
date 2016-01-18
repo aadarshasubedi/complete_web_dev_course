@@ -562,12 +562,18 @@ body {
     }
 
     #also-in-the-news h2 {
-        margin:0;
+        margin:0 0 2px 0;
         color: #505050;
         font-size: 1.846em;
     }
 
     #also-in-the-news ul {
+        position: relative;
+        overflow: hidden;
+        width: 304px;
+        margin: 0 0 4px;
+        padding-top: 7px;
+        padding-left: 320px;
         list-style: none;
     }
 
@@ -583,17 +589,25 @@ body {
         float: left;
         height: 63px;
         margin-left: -115px;
-        margin-top: 3px;
         width: 112px;
         position: relative;
         left: -11px;
     }
 
-    .column-1 {
+    .small-image h3 {
+        margin:0;
+        font-size:13px;
+    }
+
+    .column--1 {
         float: left;
         clear: left;
         display: inline;
         position: relative;
-        /*margin-left: -320px;*/
         overflow: visible;
+        margin-left: -320px
+    }
+
+    .column--2 {
+        float:left;
     }
