@@ -563,8 +563,10 @@ body {
 
     #also-in-the-news h2 {
         margin:0 0 2px 0;
+        padding: 7px 0 8px 0;
         color: #505050;
         font-size: 1.846em;
+        border-bottom: 1px solid #ddd;
     }
 
     #also-in-the-news ul {
@@ -610,4 +612,72 @@ body {
 
     .column--2 {
         float:left;
+    }
+
+    #geo-uk-digest {
+        width:100%;
+        height:50px;
+        overflow:hidden;
+        margin-bottom:20px;
+    }
+
+    #geo-uk-digest h3 {
+        font-size: 1.231em;
+        font-weight: bold;
+        line-height: 20px;
+        text-rendering: optimizelegibility;
+    }
+
+    .digest-column {
+        display: inline;
+        float:left;
+        width:304px;
+    }
+
+    .right-column {
+        padding-left: 16px;
+    }
+
+    #geographic-regions-container {
+        width:608px;
+        margin-bottom: 16px;
+        padding: 8px 8px 0;
+        background-color: #262835;
+    }
+
+    #geographic-regions-container ul {
+        list-style: none;
+    }
+
+    #geographic-regions-inner {
+        width:288px;
+        margin: 0 0 8px;
+        padding:8px 8px 0 312px;
+        overflow:hidden;
+        background-color: #3c3e51;
+    }
+
+    .geographic-section {
+        overflow: visible;
+        margin: 0 0 5px;
+    }
+
+    .geographic-section h4 {
+        color:#f0f0f0;
+    }
+
+    .geographic-section li {
+        color: #ACC2D4;
+        font-size: 1.231em;
+        font-weight: bold;
+        line-height: 16px;
+        text-rendering: optimizeLegibility;
+    }
+
+    .geo-column-1 {
+        float:left;
+        display: inline;
+        clear:left;
+        width:288px;
+        margin-left: -304px;
     }
