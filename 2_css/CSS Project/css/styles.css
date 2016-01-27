@@ -718,10 +718,13 @@ a {
         margin-bottom: 16px;
         padding: 8px 8px 0;
         background-color: #262835;
+        overflow: hidden;
     }
 
-    #geographic-regions-container ul {
+    #geographic-regions-inner ul {
         list-style: none;
+        padding: 8px 0 8px 0;
+        margin-top: -8px;
     }
 
     #geographic-regions-inner {
@@ -729,6 +732,7 @@ a {
         margin: 0 0 8px;
         padding:8px 8px 0 312px;
         overflow:hidden;
+        position: relative;
         background-color: #3c3e51;
     }
 
@@ -742,14 +746,16 @@ a {
         padding-top: 11px;
         padding-bottom: 5px;
         border-bottom: 1px solid #ddd;
+        font-size: 1.231em;
     }
 
     .geographic-section li {
         color: #ACC2D4;
-        font-size: 1.231em;
         font-weight: bold;
         line-height: 16px;
         text-rendering: optimizeLegibility;
+        margin-top: 8px;
+        width: 100%
     }
 
     .geo-column-1 {
