@@ -504,7 +504,7 @@ a {
     }
 
     .side_stories {
-        margin-top: 15px;
+        margin: 15px 0 16px 0;
         padding: 2px 10px 5px 0;
         float:left;
         background-color: #EEEEEE;
@@ -572,10 +572,9 @@ a {
     #further_stories {
         clear:left;
         width: 610px;
-        margin: 10px 2px 0 2px;
+        margin: 10px 2px 15px 2px;
         padding-bottom: 10px;
         overflow:auto;
-        border-bottom: 1px solid #ddd;
     }
 
     #further_stories h2 {
@@ -635,12 +634,17 @@ a {
         padding-top: 0;
         margin: 0 0 12px;
         overflow:visible;
+        border-top: 1px solid #ddd;
     }
 
     #also-in-the-news h2 {
         margin:0 0 2px 0;
         padding: 7px 0 8px 0;
         font-size: 1.846em;
+        font-weight: bold;
+        letter-spacing: -1px;
+        line-height: 24px;
+        text-rendering: optimizeLegibility;
         border-bottom: 1px solid #ddd;
     }
 
@@ -693,11 +697,11 @@ a {
         width:100%;
         height:50px;
         overflow:hidden;
-        margin-bottom:20px;
+        margin-bottom:30px;
     }
 
     #geo-uk-digest h3 {
-        font-size: 1.231em;
+        font-size: 1.3em;
         font-weight: bold;
         line-height: 20px;
         text-rendering: optimizelegibility;
@@ -745,7 +749,7 @@ a {
         color:#f0f0f0;
         padding-top: 11px;
         padding-bottom: 5px;
-        border-bottom: 1px solid #ddd;
+        border-bottom: 1px solid #262835;
         font-size: 1.231em;
     }
 
@@ -764,4 +768,50 @@ a {
         clear:left;
         width:288px;
         margin-left: -304px;
+    }
+
+    .most-popular {
+        width:320px;
+        margin: 0 0 16px;
+        padding:8px 8px 8px;
+        background: #ededed;
+        float:left;
+        overflow:hidden;
+    }
+
+    .most-popular h2 {
+        font-size: 1.846em;
+        font-weight: bold;
+        letter-spacing: -0.05em;
+        line-height: 24px;
+        text-indent: -1px;
+        padding: 0;
+    }
+
+    .most-popular h3 {
+        padding:10px 0 10px 0;
+        font-size: 1.231em;
+        font-weight: bold;
+        line-height: 20px;
+    }
+
+    .most-popular-week {
+            overflow: hidden;
+            width: 320px;
+            background: #fff;
+    }
+
+    .most-popular-li {
+        display: block;
+        overflow: hidden;
+        border-top: 1px solid #eee;
+    }
+
+    .most-popular-week a {
+        position: relative;
+        overflow: visible;
+        float: left;
+        display: inline;
+        width: 283px;
+        padding: 11px 29px 12px 8px;
     }
