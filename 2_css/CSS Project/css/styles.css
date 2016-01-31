@@ -839,3 +839,7 @@ a:visited {
 .correspondent_promo_inner {
     padding-top:24px;
 }
+
+.hide_div {
+    display:none;
+}
