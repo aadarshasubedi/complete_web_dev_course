@@ -12,3 +12,10 @@
 .navbar-inverse .navbar-toggle .icon-bar {
   background-color: #9d9d9d;
 }
+.topContainer {
+	background-image:url("../images/la.jpg");
+	height:400px;
+	width:100%;
+	background-size: cover;
+}
+
