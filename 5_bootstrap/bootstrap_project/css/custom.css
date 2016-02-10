@@ -2,27 +2,36 @@
   background-color: #222;
   border-color: #080808;
 }
-
 .inverse-dropdown > li > a {
   color: #9d9d9d;
 }
-
 .inverse-dropdown > li > a:hover {
   color: #fff;
   background-color: #000;
 }
-
 .navbar-inverse .navbar-toggle .icon-bar {
   background-color: #9d9d9d;
 }
-
-.topContainer {
-	background-image:url("../images/la.jpg");
-  width:100%;
-	background-size: cover;
+.fullback {
+  width: 100%;
+  background-size: cover;
 }
-
-.top-row {
-  margin-top:50px;
+.topContainer {
+  background-image: url("../images/1.jpg");
+  width: 100%;
+  background-size: cover;
+}
+.secondContainer {
+  background-image: url("../images/2.jpg");
+  width: 100%;
+  background-size: cover;
+}
+.thirdContainer {
+  background-image: url("../images/1.jpg");
+  width: 100%;
+  background-size: cover;
+}
+.row_padding {
+  margin-top: 75px;
   text-align: center;
 }

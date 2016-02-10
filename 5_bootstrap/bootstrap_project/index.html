@@ -9,7 +9,7 @@
 
     <!-- Bootstrap --> 
     <link href="css/bootstrap.min.css" rel="stylesheet"> 
-    <!-- Custom LESS CSS -->
+    <!-- Custom CSS -->
     <link href="css/custom.css" rel="stylesheet" type="text/css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries --> 
@@ -47,17 +47,17 @@
             <!-- Collect the nav links, forms and other content for toggling -->
 
             <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav navbar-right">
 
                     <li><a href="#">About me</a>
                                       
-                    <li class="dropdown active">
+                    <li class="dropdown">
                      
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Course Progress<span class="sr-only">Current</span><span class="caret"></span>
                      
                         <ul class="dropdown-menu inverse-dropdown">
                  
-                            <li class="active inverse-dropdown"><a href="http://www.willbatey.co.uk">www.willbatey.co.uk</a></li>
+                            <li class="inverse-dropdown"><a href="http://www.willbatey.co.uk">www.willbatey.co.uk</a></li>
                             <li><a href="http://www.willbatey.co.uk/cwdc/index.html">CWDC Index Page</a></li>
                             <li><a href="#">More Stuff 3</a></li>
                             <li class="divider" role="seperator"></li>
@@ -89,16 +89,43 @@
 
     <!-- Site content container div -->
 
-    <div class="container-fluid topContainer">
+    <div class="container-fluid topContainer windowHeight">
                 
         <div class="row">
-            <div class="col-md-6 col-md-offset-3 top-row">
+
+            <div class="col-md-6 col-md-offset-3 row_padding">
                 
-                <h1>My Awesome App</h1>
+                <h1>Will Batey</h1>
+
+                <p class="lead">London based front end web developer</p>
+
+                <p>Watch this space!</p>
+
+                <p><strong>Need a website? <a href="mailto:will@willbatey.co.uk">E-mail me! <span class="glyphicon glyphicon-envelope"></span></a></strong></p>
 
             </div>
         </div>
 
+    </div>
+
+
+    <div class="container-fluid secondContainer windowHeight">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 row_padding">
+                <h1>Course Progress</h1>
+                <p class="lead">This is my course progress</p>
+            </div>
+        </div>
+    </div>
+        
+
+    <div class="container-fluid thirdContainer windowHeight">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 row_padding">
+                <h1>Work</h1>
+                <p class="lead">This is my previous work</p>
+            </div>
+        </div>
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
@@ -107,9 +134,22 @@
     <!-- Include all compiled plugins (below), or include individual files as needed --> 
     <script src="js/bootstrap.min.js"></script> 
 
+    <!-- My scripts -->
     <script type="text/javascript">
 
-    $(".topContainer").css("height", $(window).height());
+    console.log($(window).height());
+
+    var navBarHeight = $(".navbar-header").height();
+
+    var windowHeight = $(window).height();
+
+    console.log(navBarHeight);
+
+    var topContainerHeight = (windowHeight - navBarHeight/2) + "px";
+
+    console.log(topContainerHeight);
+
+    $(".windowHeight").css("height", topContainerHeight);
 
     </script>
 
