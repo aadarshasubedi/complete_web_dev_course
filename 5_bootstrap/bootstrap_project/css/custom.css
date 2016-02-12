@@ -16,6 +16,9 @@
   width: 100%;
   background-size: cover;
 }
+.gridMargin {
+  margin-left: 8%;
+}
 .topContainer {
   background-image: url("../images/1.jpg");
   width: 100%;
@@ -28,11 +31,10 @@
 }
 .thirdContainer {
   background-image: url("../images/1.jpg");
-  width: 100%;
-  background-size: cover;
 }
 .row-padding {
   margin-top: 75px;
+  margin-bottom: 75px;
   text-align: center;
 }
 .transparent-box {
