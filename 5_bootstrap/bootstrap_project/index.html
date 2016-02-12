@@ -49,11 +49,15 @@
             <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
 
-                    <li><a href="#">About me</a>
+                    <li><a href="#about">About me</a></li>
+
+                    <li><a href="#courseProgress">Course Progress</a></li>
+
+                    <li><a href="#portfolio">Portfolio</a></li>
                                       
                     <li class="dropdown">
                      
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Course Progress<span class="sr-only">Current</span><span class="caret"></span>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More stuff<span class="sr-only">Current</span><span class="caret"></span>
                      
                         <ul class="dropdown-menu inverse-dropdown">
                  
@@ -89,11 +93,11 @@
 
     <!-- Site content container div -->
 
-    <div class="container-fluid topContainer windowHeight">
+    <div class="container-fluid topContainer windowHeight" id="about">
                 
         <div class="row">
 
-            <div class="col-md-6 col-md-offset-3 row_padding">
+            <div class="col-md-6 col-md-offset-3 row-padding transparent-box">
                 
                 <h1>Will Batey</h1>
 
@@ -109,9 +113,9 @@
     </div>
 
 
-    <div class="container-fluid secondContainer windowHeight">
+    <div class="container-fluid secondContainer windowHeight" id="courseProgress">
         <div class="row">
-            <div class="col-md-6 col-md-offset-3 row_padding">
+            <div class="col-md-6 col-md-offset-3 row-padding transparent-box">
                 <h1>Course Progress</h1>
                 <p class="lead">This is my course progress</p>
             </div>
@@ -119,9 +123,9 @@
     </div>
         
 
-    <div class="container-fluid thirdContainer windowHeight">
+    <div class="container-fluid thirdContainer windowHeight" id="portfolio">
         <div class="row">
-            <div class="col-md-6 col-md-offset-3 row_padding">
+            <div class="col-md-6 col-md-offset-3 row-padding transparent-box">
                 <h1>Work</h1>
                 <p class="lead">This is my previous work</p>
             </div>
@@ -137,19 +141,19 @@
     <!-- My scripts -->
     <script type="text/javascript">
 
-    console.log($(window).height());
+    // console.log($(window).height());
 
-    var navBarHeight = $(".navbar-header").height();
+    // var navBarHeight = $(".navbar-header").height();
 
-    var windowHeight = $(window).height();
+    // var windowHeight = $(window).height();
 
-    console.log(navBarHeight);
+    // console.log(navBarHeight);
 
-    var topContainerHeight = (windowHeight - navBarHeight/2) + "px";
+    // var topContainerHeight = (windowHeight - navBarHeight/2) + "px";
 
-    console.log(topContainerHeight);
+    // console.log(topContainerHeight);
 
-    $(".windowHeight").css("height", topContainerHeight);
+    $(".windowHeight").css("height", $(window).height());
 
     </script>
 
