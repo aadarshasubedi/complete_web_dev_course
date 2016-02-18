@@ -97,7 +97,7 @@
                 
         <div class="row">
 
-            <div class="col-md-6 col-md-offset-3 row-padding transparent-box">
+            <div class="col-md-6 col-md-offset-3 row-padding text-center transparent-box">
                 
                 <h1>Will Batey</h1>
 
@@ -115,7 +115,7 @@
 
     <div class="container-fluid secondContainer windowHeight" id="courseProgress">
         <div class="row">
-            <div class="col-md-6 col-md-offset-3 row-padding transparent-box">
+            <div class="col-md-6 col-md-offset-3 row-padding text-center transparent-box">
                 <h1>Course Progress</h1>
                 <p class="lead">This is my course progress</p>
             </div>
@@ -125,22 +125,31 @@
 
     <div class="container-fluid thirdContainer windowHeight" id="portfolio">
         <div class="row">
-            <div class="col-md-6 col-md-offset-3 row-padding transparent-box">
+            <div class="col-md-6 col-md-offset-3 row-padding text-center transparent-box">
                 <h1>Work</h1>
                 <p class="lead">This is my previous work</p>
             </div>
         </div>
-            <div class="row gridMargin row-padding">
+            <div class="row gridMargin row-padding text-center">
                 <div class="col-md-3 transparent-box preview-box">Test</div>
                 <div class="col-md-3 col-md-offset-1 transparent-box preview-box">Test</div>
-                <div class="col-md-3 col-md-offset-1 transparent-box preview-box">Test</div>
+                <div class="col-md-3 col-md-offset-1 transparent-box preview-box">Test</div>         
             </div>
 
-<!--             <div class="row gridMargin row-padding">
-                <div class="col-md-3 transparent-box preview-box">Test</div>
-                <div class="col-md-offset-1 col-md-3 transparent-box preview-box">Test</div>
-                <div class="col-md-offset-1 col-md-3 transparent-box preview-box">Test</div>
-            </div> -->
+            <div class="row gridMargin row-padding text-center hidden">
+                <div class="col-md-3 transparent-box preview-box hide">Test</div>
+                <div class="col-md-offset-1 col-md-3 transparent-box preview-box hide">Test</div>
+                <div class="col-md-offset-1 col-md-3 transparent-box preview-box hide">Test</div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-4 text-center">
+                        <input type="button" data-name="show" value="More" id="toggle" />
+                    </div>
+                </div>
+            </div>
+
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
@@ -168,6 +177,8 @@
     // console.log(topContainerHeight);
 
     $(".windowHeight").css("height", $(window).height());
+
+    $(document).ready(func)
 
     </script>
 
