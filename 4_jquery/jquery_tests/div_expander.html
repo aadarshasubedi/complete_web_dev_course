@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery Div Expander Button</title>
+
+	<style type="text/css">
+
+	.container {
+		position: relative;
+		background-color: red;
+		height: 200px;
+		width: 300px;
+		padding:10px;
+		overflow: auto;
+		text-align: center;
+		margin:10px 0 10px 0;
+		}
+
+	.inner_container {
+		width:200px;
+		margin:-100px 0 0 -100px;
+		position: absolute;
+		top:80px;
+		left:155px;
+		padding:2px;
+	}
+
+	</style>
+
+
+</head>
+<body>
+
+<div class="container">
+	<div class="inner_container">
+	
+	<h1>The Magical Div!</h1>
+	<p>Click the button to watch the below div expand and contract, as if by magic!</p>
+	
+	</div>
+</div>
+
+<div class="container" id="magic">
+	<div class="inner_container">
+		<h1>Testing</h1>
+		<p>This is a test</p>
+
+		<input type="button" data-name="show" value="More" id="toggle" />
+
+	</div>
+</div>
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<!-- My Scripts -->
+<script type="text/javascript">
+
+// Add jQuery here to make div expand and contract
+
+// Finished on 21/01/2016
+
+$(function() {
+
+	$('#toggle').click(function(){
+
+		makeBig();
+
+	});
+
+
+	function makeBig(){
+
+		if ($('#magic').hasClass('big')) {
+
+				$('#toggle').attr('value', 'More');
+
+				$('#magic').animate({
+
+				height: '-=250'
+				}, 500, function() {
+									$('#magic').removeClass('big');
+									});
+
+			} else {
+
+			$('#toggle').attr('value', 'Less');
+
+			$('#magic').animate({
+
+				height: '+=250'
+				}, 500, function() {
+									$('#magic').addClass('big');
+									});
+
+		};
+
+	};
+
+});
+
+</script>
+
+</body>
+</html>
+
