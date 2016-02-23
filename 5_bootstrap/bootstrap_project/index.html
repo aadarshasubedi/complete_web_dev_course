@@ -176,13 +176,23 @@
 
     // console.log(topContainerHeight);
 
+    // Reconsider the below for height changing.... Should it check if the divs are above/below a certian height before doing anything?
+    // e.g. if div is below 700px, then increase to 1200px.
+
     $(".windowHeight").css("height", $(window).height());
 
-    $(document).ready(function) () {
+    function expandDiv() {
+        var divHeight = ($("#portfolio").height() *2) + "px";
+        console.log(divHeight);
+   };
+
+    $(document).ready(function() {
         $("#toggle").click(function () {
-            if ($(this).data('name'))
-        })
-    }
+            if ($(this).attr("data-name", "show")) {
+                expandDiv();
+            };
+        });
+    });
 
     </script>
 
