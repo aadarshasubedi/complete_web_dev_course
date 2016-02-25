@@ -10,11 +10,25 @@
   }
  }
 
+ hr {
+  border-top: solid 1px #333;
+ }
+
+.anchor:before {
+  content: ' ';
+  display:block;
+  position:relative;
+  margin-top:-50px;
+  height:50px;
+  visibility:hidden;
+}
+
 .navbar-inverse .navbar-toggle .icon-bar {
     background-color: #9d9d9d;
 }
 
 .fullback {
+  margin-top: 50px;
   width:100%;
   background-size: cover;
 }
@@ -35,6 +49,7 @@
 
 .thirdContainer {
   background-image:url("../images/1.jpg");
+  .fullback;
 }
 
 .row-padding {
@@ -47,12 +62,13 @@
 }
 
 .transparent-box {
-  background-color:rgba(34,34,34,0.2);
+  border: solid 1px black;
   border-radius: 30px;
 }
 
 .preview-box {
   height: 250px;
+  padding-top: 25px;
 }
 
 .hidden, .hide {
