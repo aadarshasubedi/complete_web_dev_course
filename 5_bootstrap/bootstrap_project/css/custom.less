@@ -1,3 +1,5 @@
+@import "less/bootstrap.less";
+
 .inverse-dropdown {
   background-color: #222;
   border-color: #080808;
@@ -77,4 +79,17 @@
 
 .lead {
   margin-bottom:10px;
+}
+
+.wrapper {
+  .make-row();
+}
+
+.content-main {
+  .make-lg-column(8);
+}
+
+.content-secondary {
+  .make-lg-column(3);
+  .make-lg-column-offset(1);
 }
