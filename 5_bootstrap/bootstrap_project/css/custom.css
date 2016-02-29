@@ -6752,35 +6752,28 @@ hr {
 .navbar-inverse .navbar-toggle .icon-bar {
   background-color: #9d9d9d;
 }
-.fullback {
-  margin-top: 50px;
-  width: 100%;
-  background-size: cover;
-}
 .gridMargin {
   margin-left: 8%;
 }
 .topContainer {
-  background-image: url("../images/1.jpg");
-  margin-top: 50px;
-  width: 100%;
-  background-size: cover;
+  background-color: #eeeeee;
 }
 .secondContainer {
-  background-image: url("../images/2.jpg");
-  margin-top: 50px;
-  width: 100%;
-  background-size: cover;
+  background-color: #222222;
+}
+.secondContainer > div {
+  color: #eeeeee;
 }
 .thirdContainer {
-  background-image: url("../images/1.jpg");
-  margin-top: 50px;
-  width: 100%;
-  background-size: cover;
+  background-color: #eeeeee;
 }
 .row-padding {
   margin-top: 25px;
   margin-bottom: 25px;
+}
+.divPadding {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .text-center {
   text-align: center;
@@ -6788,6 +6781,9 @@ hr {
 .transparent-box {
   border: solid 1px black;
   border-radius: 30px;
+}
+.greyBackground {
+  background-color: rgba(0, 2, 34, 0.2);
 }
 .preview-box {
   height: 250px;
@@ -6833,8 +6829,12 @@ hr {
     margin-left: 8.33333333%;
   }
 }
-.dark-border thead,
-.dark-border tr,
-.dark-border td {
-  border: 1px solid #222;
+.table-bordered {
+  border-color: #222;
+}
+.table-bordered > thead > tr > th {
+  border-color: #222;
+}
+.table-bordered > tbody > tr > td {
+  border-color: #222;
 }
