@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+	<title>Learning Javascript</title>
+
+	<meta charset="utf-8" />
+	<meta http-equiv="Content-type" content="text/html"; charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' type='text/css' rel='stylesheet'>
+
+	<style type="text/css">
+
+	#body {
+		background-color:black;
+		color:white;
+		font-weight: bold;
+		font-family: 'Montserrat', sans-serif;
+		-webkit-font-smoothing: antialiased;
+	}
+
+	#box {
+		display:none;
+		position:relative;
+		height:100px;
+		width:100px;
+		top:0px;
+		left:0px;
+
+	}
+
+/*	--> Edited makeBox() function to randomise between boxes and circles. No need for additional circle id.
+
+	#circle {
+		display:none;
+		position:relative;
+		height:100px;
+		width:100px;
+		border-radius: 100px;
+		top:0px;
+		left:0px;
+
+	}
+
+*/
+
+	</style>
+
+</head>
+<body id="body">
+
+	<p>Test your reaction time.<br><br>Click the shapes as quickly as you can!</p>
+
+	<p>Your time: <span id="time">0 seconds</span></p>
+
+	<div id="box"></div>
+
+	<script type="text/Javascript" src="scripts.js"></script>
+
+</body>
+</html>
