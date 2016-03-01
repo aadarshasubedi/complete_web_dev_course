@@ -1,6 +1,15 @@
 @import "../../bootstrap-3.3.6/less/bootstrap.less";
 
-.inverse {
+body {
 	background-color: @gray-darker;
 	color: @gray-lighter;
 }
+
+a {
+	color: @gray-lighter;
+	text-decoration: underline;
+	&:hover, &:active {
+		color: @gray-light;
+	}
+}
+
