@@ -1,143 +1,47 @@
-<!doctype html>
-<html>
-<head>
-	<title>Learning jQuery</title>
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+	<meta charset="utf-8"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->  
+	<title>Jquery Projects</title> 
 
-	<meta charset="utf-8" />
-	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!-- Bootstrap --> 
+	<link href="css/bootstrap.min.css" rel="stylesheet"> 
 
-	<script type="text/javascript" src="jquery.min.js"></script>
+	<!-- CSS Stylesheet -->
+	<link href="css/styles.css" rel="stylesheet">
 
-	<style type="text/css">
-/*
-	* {
-		border: solid 1px black;
-	}*/
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries --> 
 
-	#container {
-		width:500px;
-		margin:0 auto;
-		text-align: center;
-		padding:5px;
-		font-family: helvetica;
-		font-size:1.2em;
-	}
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// --> 
 
-	input {
-		height:30px;
-		padding:5px;
-		font-size: 1em;
-		border-radius: 5px;
-		margin-bottom: 10px;
-	}
+	<!--[if lt IE 9]> 
 
-	input:focus {
-		outline:none;
-	}
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script> 
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> 
 
-	label {
-		width:200px;
-		float:left;
-		padding: 15px 0 0 0;
-	}
+	<![endif]--> 
 
-	#submitButton {
-		height:50px;
-		width:225px;
-		margin-left: 200px;
-	}
+</head> 
+<body> 
 
-	#error {
-		margin: 0 auto;
-		padding:10px 0 15px 0;
-		color:red;
-	} 
-
-	#completed {
-		position:relative;
-		left:100px;
-		color: green;
-	}
-
-	</style>
-
-</head>
-
-<body>
-
-	<div id="container">
-
-	<div id="error"></div>
-
-	<form id="validationForm">
-
-		<label for="email">Email</label>
-		<input name="email" id="email"/>
-
-		<label for="telephone">Telephone</label>
-		<input name="phone" id="phone"/>
-
-		<label for="password">Password</label>
-		<input name="password" type="password" id="pass1"/>
-
-		<label for="passwordConfirmation">Confirm Password</label>
-		<input name="password" type="password" id="pass2"/>
-
-		<input id="submitButton" type="submit" value="Submit" />
-
-	</form>
-
-	<div id="completed"></div>
-
+	<div class="container inverseColours">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-5">
+				<h1><a href="/cwdc/4_jquery/form.html">jQuery Form</a></h1>
+				<h1><a href="/cwdc/4_jquery/jqueryui.html">jQuery UI</a></h1>
+				<h1><a href="/cwdc/4_jquery/jquerythemes.html">jQuery Themes</a></h1>
+			</div>
+		</div>
 	</div>
 
-	<script>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
 
-	$("#validationForm").submit(function(event) {
+	<!-- Include all compiled plugins (below), or include individual files as needed --> 
+	<script src="js/bootstrap.min.js"></script> 
 
-		var errorMessage="";
-
-		event.preventDefault();
-
-		function isValidEmailAddress(emailAddress) {
-    	
-    	var pattern = /^([a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+(\.[a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+)*|"((([ \t]*\r\n)?[ \t]+)?([\x01-\x08\x0b\x0c\x0e-\x1f\x7f\x21\x23-\x5b\x5d-\x7e\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|\\[\x01-\x09\x0b\x0c\x0d-\x7f\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))*(([ \t]*\r\n)?[ \t]+)?")@(([a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.)+([a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.?$/i;
-    
-    	return pattern.test(emailAddress);
-		};
-
-		if (!isValidEmailAddress($("#email").val())) {
-
-			errorMessage="Please enter a valid e-mail address";
-
-		}
-
-		if (!$.isNumeric($("#phone").val())) {
-
-			errorMessage=errorMessage+"<br />Please enter a valid phone number";
-
-		}
-
-		if ($("#pass1").val() != $("#pass2").val()) {
-
-			errorMessage=errorMessage+"<br />Please enter matching passwords";
-
-		}
-
-		if (errorMessage=="") {
-
-			$("#completed").html("Form submitted!");
-
-		} else {
-
-			$("#error").html(errorMessage);
-
-		};	
-
-	});
-
-	</script>
-
-</body>
+</body> 
 </html>

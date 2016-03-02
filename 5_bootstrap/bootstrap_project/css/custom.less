@@ -33,19 +33,14 @@
   margin-left:8%;
 }
 
-.topContainer {
-  background-color: @gray-lighter;
+.inverseDark {
+  background-color: @gray-dark;
+  color: @gray-lighter
 }
 
-.secondContainer {
+.inverseDarker {
   background-color: @gray-darker;
-  &>div {
-    color: @gray-lighter;
-  }
-}
-
-.thirdContainer {
-  background-color: @gray-lighter;
+  color: @gray-lighter;
 }
 
 .row-padding {
@@ -98,12 +93,12 @@
 }
 
 .table-bordered {
-    border-color: #222;
+    border-color: @gray-dark;
     &>thead>tr>th { 
-    border-color: #222;
+    border-color: @gray-dark;
     }
     &>tbody>tr>td {
-    border-color: #222;    
+    border-color: @gray-dark;    
     }  
 }
 

@@ -5,18 +5,13 @@
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-
-	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-
 	<style type="text/css">
 
 	* {
 		border: solid 1px;
 	}
 
-	#wrapper {
+	.wrapper {
 		background-color: yellow;
 	}
 
@@ -26,12 +21,24 @@
 
 <body>
 
-	<ul>
-		<li>Chicken</li>
-		<li>Beef</li>
-		<li>Steak</li>
-		<li>Meat slop</li>
-	</ul>
+	<h1>Drag and sort the list below!</h1>
+
+	<div class="wrapper">
+
+		<ul>
+			<li>Chicken</li>
+			<li>Beef</li>
+			<li>Steak</li>
+			<li>Meat slop</li>
+		</ul>
+
+	</div>
+
+	<!-- jQuery 2.x -->
+	<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+
+	<!-- jQuery UI -->
+	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>	
 
 	<script>
 

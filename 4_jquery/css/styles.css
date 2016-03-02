@@ -6459,9 +6459,7 @@ button.close {
 .modal-header:before,
 .modal-header:after,
 .modal-footer:before,
-.modal-footer:after,
-.wrapper:before,
-.wrapper:after {
+.modal-footer:after {
   content: " ";
   display: table;
 }
@@ -6480,8 +6478,7 @@ button.close {
 .pager:after,
 .panel-body:after,
 .modal-header:after,
-.modal-footer:after,
-.wrapper:after {
+.modal-footer:after {
   clear: both;
 }
 .center-block {
@@ -6727,113 +6724,15 @@ button.close {
     display: none !important;
   }
 }
-.inverse-dropdown {
-  background-color: #222;
-  border-color: #080808;
-}
-.inverse-dropdown > li > a {
-  color: #9d9d9d;
-}
-.inverse-dropdown > li > a:hover {
-  color: #fff;
-  background-color: #000;
-}
-hr {
-  border-top: solid 1px #333;
-}
-.anchor:before {
-  content: ' ';
-  display: block;
-  position: relative;
-  margin-top: -50px;
-  height: 50px;
-  visibility: hidden;
-}
-.navbar-inverse .navbar-toggle .icon-bar {
-  background-color: #9d9d9d;
-}
-.gridMargin {
-  margin-left: 8%;
-}
-.inverseDark {
-  background-color: #333333;
-  color: #eeeeee;
-}
-.inverseDarker {
+body {
   background-color: #222222;
   color: #eeeeee;
 }
-.row-padding {
-  margin-top: 25px;
-  margin-bottom: 25px;
+a {
+  color: #eeeeee;
+  text-decoration: underline;
 }
-.divPadding {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-.text-center {
-  text-align: center;
-}
-.transparent-box {
-  border: solid 1px black;
-  border-radius: 30px;
-}
-.greyBackground {
-  background-color: rgba(0, 2, 34, 0.2);
-}
-.preview-box {
-  height: 250px;
-  padding-top: 25px;
-}
-.hidden,
-.hide {
-  display: hidden;
-}
-.lead {
-  margin-bottom: 10px;
-}
-.wrapper {
-  margin-left: -15px;
-  margin-right: -15px;
-}
-.content-main {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media (min-width: 1200px) {
-  .content-main {
-    float: left;
-    width: 66.66666667%;
-  }
-}
-.content-secondary {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media (min-width: 1200px) {
-  .content-secondary {
-    float: left;
-    width: 25%;
-  }
-}
-@media (min-width: 1200px) {
-  .content-secondary {
-    margin-left: 8.33333333%;
-  }
-}
-.table-bordered {
-  border-color: #333333;
-}
-.table-bordered > thead > tr > th {
-  border-color: #333333;
-}
-.table-bordered > tbody > tr > td {
-  border-color: #333333;
-}
-.label {
-  font-size: 100%;
+a:hover,
+a:active {
+  color: #777777;
 }
