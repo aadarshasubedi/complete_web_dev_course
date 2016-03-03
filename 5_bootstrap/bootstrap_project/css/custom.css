@@ -6837,3 +6837,7 @@ hr {
 .label {
   font-size: 100%;
 }
+.header {
+  height: 100vh;
+  max-height: 1150px;
+}
