@@ -6837,7 +6837,7 @@ hr {
 .label {
   font-size: 100%;
 }
-.header {
+.fullWindow {
   height: 100vh;
-  max-height: 1150px;
+  max-height: 900px;
 }
