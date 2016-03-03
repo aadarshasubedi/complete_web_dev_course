@@ -6736,3 +6736,6 @@ a:hover,
 a:active {
   color: #777777;
 }
+.textcenter {
+  text-align: center;
+}
