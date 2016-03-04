@@ -1,0 +1,46 @@
+body {
+	position: relative;
+}
+
+.inverseDark {
+  background-color: #333333;
+  color: #eeeeee;
+}
+
+.inverseDarker {
+  background-color: #222222;
+  color: #eeeeee;
+}
+
+ .row-padding {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.divPadding {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.fullWindow {
+  height: 100vh;
+  max-height: 900px;
+}
+
+.text-center {
+  text-align: center;
+}  
+
+.table-bordered {
+  border-color: #333333;
+}
+.table-bordered > thead > tr > th {
+  border-color: #333333;
+}
+.table-bordered > tbody > tr > td {
+  border-color: #333333;
+}
+
+.label {
+  font-size: 100%;
+}
