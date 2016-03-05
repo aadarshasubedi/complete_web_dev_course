@@ -44,3 +44,23 @@ body {
 .label {
   font-size: 100%;
 }
+
+a {
+  color: #eeeeee;
+  text-decoration: underline;
+}
+a:hover, a:focus,
+a:active,
+a:visited {
+  color: #777777;
+}
+
+.list-group-item {
+  background-color: #222;
+}
+
+.completeHeader a {
+  color:#b7b7b7 !important;
+  text-decoration: line-through;
+}
+
