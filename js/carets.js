@@ -4,19 +4,15 @@ $(document).ready(function() {
     .on('show.bs.collapse', function() {
       $(this)
       .prev()
-      .find(".glyphicon-triangle-right")
+      .find("span.glyphicon-triangle-right")
       .removeClass("glyphicon-triangle-right")
       .addClass("glyphicon-triangle-bottom");
       })
     .on('hide.bs.collapse', function () {
       $(this)
       .prev()
-      .find(".glyphicon-triangle-bottom")
+      .find("span.glyphicon-triangle-bottom")
       .removeClass("glyphicon-triangle-bottom")
       .addClass("glyphicon-triangle-right");
       });
     });
-
-  $(function() {
-    $("[rel='tooltip']").tooltip();
-  });
