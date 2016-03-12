@@ -95,3 +95,14 @@ a:hover, a:focus  {
 .blue-links a:hover {
   text-decoration: underline;
 }
+
+.contentCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  position: relative;
+  top: -50px;
+}
